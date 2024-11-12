@@ -35,14 +35,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Bol.com
+  https://www.wwf.nl/wat-we-doen
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home 
-  <img src="images/Bol-home.png" width="375px" alt="omschrijving van de pagina">
+  Home
+  <img src="images/WWF-home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Boeken
-  <img src="images/BOL-boeken.png" width="375px" alt="omschrijving van de pagina">
+  Wat we doen
+  <img src="images/WWf-wat we doen.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
