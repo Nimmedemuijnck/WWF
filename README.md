@@ -37,12 +37,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   Bol.com
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Wat we doen 
-  <img src="/Users/nimmedemuijnck/Library/CloudStorage/OneDrive-HvA/GitHub/WWF/images/Bol-home.png" width="375px" alt="omschrijving van de pagina">
+  Home 
+  <img src="images/Bol-home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Kom in actie 
-  <img src="/Users/nimmedemuijnck/Library/CloudStorage/OneDrive-HvA/GitHub/WWF/images/BOL-boeken.png" width="375px" alt="omschrijving van de pagina">
+  Boeken
+  <img src="images/BOL-boeken.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
