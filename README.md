@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nimme de Muijnck
 
   #### Je startniveau:
-Blauw
+  Blauw
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
  
@@ -35,14 +35,14 @@ Blauw
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.wwf.nl/wat-we-doen  
+  Bol.com
   #### Screenshot(s) van de eerste pagina (small screen): 
   Wat we doen 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="/Users/nimmedemuijnck/Library/CloudStorage/OneDrive-HvA/GitHub/WWF/images/Bol-home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Kom in actie 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="/Users/nimmedemuijnck/Library/CloudStorage/OneDrive-HvA/GitHub/WWF/images/BOL-boeken.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
