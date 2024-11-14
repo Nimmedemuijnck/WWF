@@ -37,12 +37,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je opdracht:
   https://www.wwf.nl/wat-we-doen
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home
-  <img src="images/Wereld-Natuur-Fonds-Be-one-with-nature-Sluit-je-aan.png" width="375px" alt="omschrijving van de pagina">
+  Product scherm
+  <img src="images/ProductScherm-1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Wat we doen
-  <img src="images/Wat-we-doen-WWF-Help-jij-ook-mee-.png" width="375px" alt="omschrijving van de pagina">
+  <img src="images/WatWeDoenWWF-2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
