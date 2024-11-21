@@ -50,6 +50,11 @@ header{
     transition: 0.3s;
 }
 
+section{
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 
 .logo a {
