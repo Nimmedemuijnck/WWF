@@ -52,10 +52,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  De WWF-pagina voor de retro sportsokken voldoet voor een groot deel aan toegankelijkheidsstandaarden, maar er zijn verbeterpunten. De HTML-code bevat fouten en gekopieerde stukken, wat de structuur verstoort. Ook ontbreken skip-links en alt-teksten voor decoratieve afbeeldingen. Het kleurcontrast kan verbeterd worden voor betere leesbaarheid. Hoewel focus- en toetsenbordnavigatie goed werken, zijn er nog enkele elementen die geoptimaliseerd moeten worden om de toegankelijkheid verder te verbeteren.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - Fouten in HTML-code.
+  - Skip-links ontbreken.
+  - Decoratieve afbeeldingen missen alt-teksten.
+  - Focus- en toetsenbordnavigatie functioneren goed.
 </details>
 
 
