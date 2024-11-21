@@ -59,7 +59,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Fouten in HTML-code.
   - Skip-links ontbreken.
   - Decoratieve afbeeldingen missen alt-teksten.
-  - Focus- en toetsenbordnavigatie functioneren goed.
 </details>
 
 
