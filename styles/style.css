@@ -32,10 +32,90 @@
 /* op basis van https://www.youtube.com/watch?v=XM7sEpl0f7c */
 
 
-header{
-    display: flex;
-}
 
+/*************/
+/* DE HEADER */
+/*************/
+header {
+    /* JOUW CODE HIER - stap 3 */  
+    Display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+    /* JOUW CODE HIER - stap 3 */
+    
+    
+  }
+  
+  
+  
+  /************/
+  /* HET MENU */
+  /************/
+  nav {
+    /* JOUW CODE HIER - stap 3 */
+   order: -1;
+   
+  }
+  
+  
+  
+  /***************/
+  /* MENU BUTTON */
+  /***************/
+  nav button {
+    /* JOUW CODE HIER - stap 5 */
+    position: relative;
+    z-index: 100;
+    
+  }
+  
+  /* als menu open is */
+ /* nav.toonMenu button img {
+    /* JOUW CODE HIER - stap 5 */
+    /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
+    
+    
+  
+  
+  
+  
+  /*******************/
+  /* LIJST MET LINKS */
+  /*******************/
+  nav ul { 
+    /* JOUW CODE HIER - stap 1 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    
+    
+    
+    /* JOUW CODE HIER - stap 2 */
+    translate: 100% 0%;
+    
+    
+    /* JOUW CODE HIER - stap 4 */
+  
+    
+  }
+  
+  /* als menu open is */
+  nav.toonMenu ul {
+    /* JOUW CODE HIER - stap 4 */
+    translate: 0% 0%;
+    transition: 0.3s;
+  
+    
+  }
+  
+  
+  
+  
 
 
 /*{
