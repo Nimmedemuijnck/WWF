@@ -7,47 +7,115 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>WWF</title>
-	<link href="styles/style.css" rel="stylesheet">
-	<script src="scripts/script.js" defer></script>
+	<link href="css/css.css" rel="stylesheet">
+	<script src="java/java.js" defer></script>
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="#" class="nav-branding">
-              <img src="images/logo.svg" alt="WWF logo" class="nav-logo">
-            </a>
-    
-            <ul class="nav-menu">
-              <li  class="nav-item"><a href="#" class="nav-link">Wat we doen</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Kom in actie</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Bedreigde dieren</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Jeugd</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Webshop</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Vrijwilligers</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Winkelwagen</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Over WWF</a></li>
-              <li  class="nav-item"><a href="#" class="nav-link">Mijn acties</a></li>
-            </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-    
-            </div>
-    
-          </nav>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">
+          <img src="images/logo.svg" alt="WWF logo" class="nav-logo">
+        </a>
+        
+        <ul class="nav-menu">
+          <li  class="nav-item"><a href="#" class="nav-link">Wat we doen</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Kom in actie</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Bedreigde dieren</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Jeugd</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Webshop</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Vrijwilligers</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Winkelwagen</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Over WWF</a></li>
+          <li  class="nav-item"><a href="#" class="nav-link">Mijn acties</a></li>
+        </ul>
+        <div class="hamburgr">
+          <p id="div1">Menu</p>
+          <span class="bar" id="div2"></span>
+          <span class="bar" id="div3"></span>
+          <span class="bar" id="div4"></span>
+        </div>
+
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Omschrijving</h1>
-            <p> Na het succes van de witte sportsokken is deze er nu ook in het zwart. Sportsokken zijn helemaal retro. En met het geborduurde WWF logo er op maak je helemaal een statement!
+      <!-- SLIDESHOW -->
+      <section id="bolletjesAndLinkButtons" class="caroCarrousel" aria-label="Voorbeeld met bolletjes en links/rechts-buttons" tabIndex="-1">
+        <ul>
+            <li id="element1"><img src="images/wwf-retro-sportsok-zwart-01.jpg" alt="Sokken volledig" /></li>
+            <li id="element2"><img src="images/wwf-retro-sportsok-zwart-03.jpg" alt="Sokken verpakking" /></li>
+            <li id="element3"><img src="images/wwf-retro-sportsok-zwart-02.jpg" alt="Sokken zoom-in" /></li>
+            <li id="element4"><img src="images/wwf-sportsokken-zwart-02 (1).png" alt="Sokken buiten" /></li>
+        </ul>
+        
+        <a href="previous" aria-label="Naar het element aan de linkerkant"></a>
+        <a href="next" aria-label="Naar het element aan de rechterkant"></a>
+        
+        <nav>
+            <ul>
+                <li><a href="#element1" aria-label="go to element1"></a></li>
+                <li><a href="#element2" aria-label="go to element2"></a></li>
+                <li><a href="#element3" aria-label="go to element3"></a></li>
+                <li><a href="#element4" aria-label="go to element4"></a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+      <!-- DROPDOWNS VERSIE 1 -->
+
+      <div class="dropdown-container" id="knop1">
+        <button class="dropdown-toggle">
+            <span class="dropdown-title">Omschrijving</span>
+            <span class="dropdown-arrow"></span>
+        </button>
+        <div class="dropdown-content" id="content1">
+          <p> Na het succes van de witte sportsokken is deze er nu ook in het zwart. Sportsokken zijn helemaal retro. En met het geborduurde WWF logo er op maak je helemaal een statement!
             Bovendien zijn deze sokken deels gemaakt van garen dat is gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. Door middel van een milieu vriendelijk proces worden de visnetten omgezet in een 100% sustainable nylon.
-            </p>
-        </section>
+            </p>  
+            
+          <p>Bovendien zijn deze sokken deels gemaakt van garen dat is gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. Door middel van een milieu vriendelijk proces worden de visnetten omgezet in een 100% sustainable nylon.</p>
+        </div>
+      </div>
+
+
+
+      <div class="dropdown-container" id="knop2">
+        <button class="dropdown-toggle">
+            <span class="dropdown-title">Hoe en wat</span>
+            <span class="dropdown-arrow"></span>
+        </button>
+        <div class="dropdown-content" id="content2">
+          <p> Deze heerlijke zachte en comfortabele sokken worden deels gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. 
+            Door middel van een milieu vriendelijk proces (zie afbeelding hieronder) worden de visnetten omgezet in een 100% sustainable nylon.</p>  
+            
+          <p>Deze heerlijke zachte en comfortabele sokken worden deels gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. 
+            Door middel van een milieu vriendelijk proces (zie afbeelding hieronder) worden de visnetten omgezet in een 100% sustainable nylon.</p>
+        
+          <p>Het toplabel aan de sokken is gemaakt van FSC-karton.</p>
+
+          <img src="images/proces-healthy-seas-socks.png" alt="proces-healthy-seas-socks">
+
+        </div>
+      </div>
+
+
+      <div class="dropdown-container" id="knop3">
+        <button class="dropdown-toggle">
+            <span class="dropdown-title">Specificaties</span>
+            <span class="dropdown-arrow"></span>
+        </button>
+        <div class="dropdown-content" id="content3">
+          <p> Na het succes van de witte sportsokken is deze er nu ook in het zwart. Sportsokken zijn helemaal retro. En met het geborduurde WWF logo er op maak je helemaal een statement!
+            Bovendien zijn deze sokken deels gemaakt van garen dat is gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. Door middel van een milieu vriendelijk proces worden de visnetten omgezet in een 100% sustainable nylon.
+            </p>  
+            
+          <p>Bovendien zijn deze sokken deels gemaakt van garen dat is gemaakt van achtergelaten en ronddobberende visnetten. In zee zijn deze netten schadelijk voor het zeeleven. Door middel van een milieu vriendelijk proces worden de visnetten omgezet in een 100% sustainable nylon.</p>
+        </div>
+      </div>
     </main>
 
 </body>
