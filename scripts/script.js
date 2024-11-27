@@ -1,12 +1,18 @@
 // JavaScript Document
 console.log("hi");
 
-var toonMenu = document.querySelector("nav button"); 
-var hetMenu = document.querySelector("nav"); 
-// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
-toonMenu.onclick = openMenu;
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// stap 3: voeg in de functie een class toe aan de nav
-function openMenu() {
-hetMenu.classList.toggle("toonMenu"); 
-}
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+})
+
+
+document.querySelectorAll(".nav-link").forEach (n => n.
+addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))
