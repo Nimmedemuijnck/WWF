@@ -52,12 +52,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-  ### Bevindingen
  Lijst met je bevindingen die in de test naar voren kwamen:
 
 Content
-- Website gebruikt wel hier en daar metaforen in de nav, maar dat zijn wel duidelijke metaforen.
-- Website maakt duidelijk wat links zijn door middel van een streep onder de tekst. Buttons zijn verder ook duidelijk doordat ze rond zijn afgewerkt.
+- Website maakt duidelijk wat links zijn door middel van een streep onder de tekst en een pijltje ernaast. Buttons zijn verder ook duidelijk doordat ze rond zijn afgewerkt.
 
 Global Code
 
@@ -68,7 +66,6 @@ Keyboard
 Mobile & Touch
 - Website kan naar alle kanten draaien, zonder dat de plaatjes en knoppen raar vervormen.
 - Scrollen naar links of rechts is uitgeschakeld, alleen toegestaan op plekken waar het nodig is zoals slideshows.
-- Ik vind dat de knoppen in de NAV te klein zijn, en te dicht op elkaar zitten.
 
 Headings
 - Elk stuk nieuwe content wordt geintroduceerd door een Heading.
@@ -79,27 +76,23 @@ Lists
 - Een collectie van items staat binnen een list als content.
 
 Images
-- Geen een plaatje heeft een goeie ALT description. Ook niet de productplaatjes. (En dus de decoratieve plaatjes ook niet).
+- Er is geen plaatje met een goeie ALT description.
 
 Media
-- Videos’s beginnen met spelen zodra je de pagina opent.
-- Video’s kunnen wel gepauseerd en gemute worden.
-- Er zijn geen captions en audio transcripts.
+- Er zijn geen videa's.
 
 Controls
 
 Appearance
-- Website heeft geen dark-mode, maar wel een high-contrast mode.
-- Website ziet er nogsteeds prima uit met 200% text size increase.
-- De kleuren zijn simpel, en brengen niet echt iets naar voren, behalve dat het een chique merk is.
+- Website heeft geen dark-mode.
+- Website ziet er niet meer goed uit met 200% text size increase. De header en het product info block met de prijs en de maak blokkeren bijna het hele scherm.
+- De kleuren zijn simpel, maar door het groen is het wel duidelijk dat het over iets met natuur gaat.
 
 Animation
-- Animaties lopen smooth over en zijn niet flashy, ook de scroll animaties van de plaatjes.
-- Videos kan je op pauze zetten als je wilt.
+- Geen animaties.
 
 Color Contrast
-- De site heeft een witte achtergrond met zwarte text en iconen, dus het contrast is wel goed.
-- Tekst die de video’s overlapt is wit, en dat kan er soms voor zorgen dat de tekst niet heel goed zichtbaar is.
+- De site heeft een witte achtergrond met zwarte text, dus het contrast is wel goed. Ze zijn wel een beetje inconsistent met de kleuren van de iconen. Op sommige plaatsen zijn ze wit, op andere zwart en op weer andere zijn ze groen.
 </details>
 
 
