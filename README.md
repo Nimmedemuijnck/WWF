@@ -140,10 +140,10 @@ Color Contrast
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Toegangkelijkstest uitbreiden
+  - Breakdownschetsen afmaken 
+  - Meer html nodig voor feedback
+  - Bereid je voor op het gesprek. Bedenk vragen
 
 </details>
 
@@ -169,6 +169,10 @@ Color Contrast
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  Mijn Vragen:
+  - wat zijn dingen om mijn pagina's die ik weg zou kunnen laten?
+  - Ik moet een soort submenu creëren binnen het hoofdmenu. hoe doe ik dit?
+  - Hoe krijg ik dat stukje met product info zoals de prijs tijdelijk sticky?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
