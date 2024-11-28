@@ -79,7 +79,7 @@ Images
 - Er is geen plaatje met een goeie ALT description.
 
 Media
-- Er zijn geen videa's.
+- Er zijn geen video's.
 
 Controls
 
