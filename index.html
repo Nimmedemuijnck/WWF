@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>WWF</title>
-	<link href="styles/style.css" rel="stylesheet">
-	<script src="scripts/script.js" defer></script>
+	<link href="css/css.css" rel="stylesheet">
+	<script src="java/java.js" defer></script>
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
@@ -18,9 +18,15 @@
         <a href="#" class="nav-branding">
           <img src="images/logo.svg" alt="WWF logo" class="nav-logo">
         </a>
-        
+       
+      
         <ul class="nav-menu">
-          <li  class="nav-item"><a href="#" class="nav-link">Wat we doen</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Wat we doen</a>
+            <ul>
+             
+            </ul>
+          </li>
           <li  class="nav-item"><a href="#" class="nav-link">Kom in actie</a></li>
           <li  class="nav-item"><a href="#" class="nav-link">Bedreigde dieren</a></li>
           <li  class="nav-item"><a href="#" class="nav-link">Jeugd</a></li>
@@ -42,17 +48,23 @@
     </header>
 
     <main>
+      <!-- vorige knop -->
+      <a href="#" class="back-button">
+        &lt; Vorige pagina
+      </a>
+    
       <!-- SLIDESHOW -->
       <section id="bolletjesAndLinkButtons" class="caroCarrousel" aria-label="Voorbeeld met bolletjes en links/rechts-buttons" tabIndex="-1">
         <ul>
             <li id="element1"><img src="images/wwf-retro-sportsok-zwart-01.jpg" alt="Sokken volledig" ></li>
             <li id="element2"><img src="images/wwf-retro-sportsok-zwart-03.jpg" alt="Sokken verpakking" ></li>
             <li id="element3"><img src="images/wwf-retro-sportsok-zwart-02.jpg" alt="Sokken zoom-in" ></li>
-            <li id="element4"><img src="images/wwf-sportsokken-zwart-02 (1).png" alt="Sokken buiten" ></li>
+            <li id="element4"><img src="images/wwf-sportsokken-zwart-02-(1).png" alt="Sokken buiten" ></li>
         </ul>
         
-        <a href="previous" aria-label="Naar het element aan de linkerkant"></a>
-        <a href="next" aria-label="Naar het element aan de rechterkant"></a>
+        <a href="previous" aria-label="Naar het element aan de linkerkant">←</a>
+        <a href="next" aria-label="Naar het element aan de rechterkant">→</a>
+        
         
         <nav>
             <ul>
@@ -136,7 +148,15 @@
       
         <button class="add-to-cart">In winkelwagen ></button>
     </section>
-
+    
+    
+      <!-- call to action block -->
+      <section class="call-to-action">
+        <div class="cta-content">
+          <img src="https://www.wwf.nl/Content/dist/img/logo-footer.svg" alt="WWF Logo">
+          <p>Met iedere aankoop steun je het Wereld Natuur Fonds in de strijd voor bescherming van wereldwijde natuur!</p>
+        </div>
+      </section>
 
 
     </main>

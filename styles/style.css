@@ -43,7 +43,12 @@ box-sizing: border-box;
 }
 
 header {
-background-color: black;
+background-color: rgb(255, 255, 255);
+box-shadow: #8f8b8b;
+}
+
+main {
+background-color: #FAFAFA;
 }
 
 li {
@@ -51,7 +56,7 @@ list-style: none;
 }
 
 a {
-color: white;
+color: rgb(0, 0, 0);
 text-decoration: none;
 }
 
@@ -70,7 +75,7 @@ padding: 0 24px;
 }
 
 .navbar p {
-color: white;
+color: rgb(0, 0, 0);
 }
 
 .nav-menu {
@@ -114,7 +119,7 @@ height: 3px;
 margin: 5px auto;
 -webkit-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
-background-color: white;
+background-color: rgb(0, 0, 0);
 }
 
 .nav-branding {
@@ -123,7 +128,7 @@ padding: 0;
 }
 
 .nav-logo {
-height: 70px; 
+max-height: 95px; 
 width: auto; 
 display: block; 
 }
@@ -156,7 +161,7 @@ padding: 0;
   top: 70px;
   gap: 0;
   flex-direction: column;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -169,6 +174,24 @@ padding: 0;
 .nav-menu.active {
   left: 0;
 }
+}
+
+
+
+
+
+
+/****************/
+/* vorige knop */
+/****************/
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Donkergrijze tekstkleur */
+  font-size: 16px; /* Grootte van de tekst */
+  font-weight: 500; /* Vetgedrukte tekst */
+  padding: 10px 15px;
 }
 
 
@@ -265,6 +288,15 @@ display: block;
   position: relative;
   overflow: hidden; /* om de linkbuttons te verbergen */
   outline:none;
+
+
+
+  max-width: 98%; /* Beperkt de breedte tot 80% van de pagina */
+  margin: 15px auto; /* Voegt ruimte toe rondom en centreert de slideshow */  
+  margin-bottom: 10px;  
+  border: 2px; 
+  padding: 10px; /* Optioneel: binnenruimte */
+  
 }
 
 /* dark mode */
@@ -329,59 +361,58 @@ display: block;
 /****************/
 
 .caroCarrousel nav ul {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-bottom: 2em;
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-justify-content: center;
-gap: 0.5em;
+  left: 50%;
+  bottom: -2px; /* Zet de bolletjes iets lager, zodat ze niet uit de container vallen */
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  z-index: 10; /* Zorg ervoor dat de bolletjes boven de carrousel liggen */
 }
 
 .caroCarrousel > nav li {
-flex-basis: 1.2em; /* grootte van de bolletjes */
-aspect-ratio: 1/1;
+  flex-basis: 0.7em; /* nog kleinere bolletjes */
+  aspect-ratio: 1/1;
 }
 
 .caroCarrousel > nav a {
-display: block;
-width: 1.2em; /* maak de bolletjes groter indien nodig */
-height: 1.2em; /* maak de bolletjes groter indien nodig */
-text-decoration: none;
-color: #fff; /* kleur van de bolletjes */
-background-color: #bbb; /* kleur van de bolletjes */
-border-radius: 50%; /* maakt de bolletjes rond */
-outline: none;
-box-shadow: inset 0 0 0 1px #333; /* subtiele rand */
-transition: background-color 0.3s, transform 0.3s; /* overgang voor hover en active state */
+  display: block;
+  width: 0.7em; /* maak de bolletjes kleiner */
+  height: 0.7em; /* maak de bolletjes kleiner */
+  text-decoration: none;
+  color: #fff; /* kleur van de bolletjes */
+  background-color: #c1c1c1; /* kleur van de bolletjes */
+  border-radius: 50%; /* maakt de bolletjes rond */
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s; /* overgang voor hover en active state */
 }
-
 .caroCarrousel > nav a:hover,
 .caroCarrousel > nav a:focus {
-background-color: #368714; /* accentkleur bij hover */
-transform: scale(1.2); /* vergroting bij hover */
+  background-color: #368714; /* accentkleur bij hover */
+  transform: scale(1.2); /* vergroting bij hover */
 }
 
 .caroCarrousel > nav a.current {
-background-color: #368714; /* de kleur van het actieve bolletje */
+  background-color: #368714; /* de kleur van het actieve bolletje */
 }
+
+
 
 /****************************/
 /* PREV EN NEXT LINKBUTTONS */
 /****************************/
 .caroCarrousel > a {
 position: absolute;
-width: 3em;
-height: 3em; 
+width: 2.8em;
+height: 2.8em; 
 top: 50%;
 transform: translateY(-50%);
-color: #fff;
-background-color: #bbb;
+color: #097430;
+background-color: #ffffff;
 outline: none;
-box-shadow: inset 0 0 0 1px #333;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
 display: grid;
 place-items: center;
 border-radius: 50%; /* Maakt het een cirkel */
@@ -407,53 +438,13 @@ right: 0.5em; /* Schuift naar binnen als de carrousel wordt gehighlighted */
 }
 
 
-/* Pijltjes als content */
-/* Pijltjes als content */
-.caroCarrousel > a::before,
-.caroCarrousel > a::after {
-content: "";
-position: absolute;
-width: 1em;
-height: 4px;
-background-color: #fff;
-}
 
-.caroCarrousel > a[href="previous"]::before {
-transform-origin: 2px center;
-transform: translateY(0) rotate(45deg);
-}
-
-.caroCarrousel > a[href="previous"]::after {
-transform-origin: 2px center;
-transform: translateY(0) rotate(-45deg);
-}
-
-.caroCarrousel > a[href="next"]::before {
-transform-origin: calc(100% - 2px) center;
-transform: translateY(0) rotate(45deg);
-}
-
-.caroCarrousel > a[href="next"]::after {
-transform-origin: calc(100% - 2px) center;
-transform: translateY(0) rotate(-45deg);
-}
-
-/* Hover-effect voor de pijltjes */
-.caroCarrousel > a:hover,
-.caroCarrousel > a:focus {
-background-color: #1b75b3; /* kleur van de pijltjes bij hover */
-}
-
-
-
-
-
-/****************/
+/**********************/
 /* Product info block */
-/****************/
+/**********************/
 /* Algemene styling voor de sectie */
 .product-section {
-background-color: #cacaca;
+background-color: #FAFAFA;
 border-radius: 10px;
 padding: 20px;
 max-width: 400px; /* Beperkt de breedte */
@@ -553,4 +544,34 @@ transition: background 0.3s ease, box-shadow 0.3s ease;
 .add-to-cart:hover {
 background: linear-gradient(135deg, #769c4e, #9bc469); /* Omgekeerde gradient */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/****************************/
+/* Call to action block */
+/****************************/
+.call-to-action {
+  background-color: #F6F5F2;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px; /* Vergroot de breedte indien nodig */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+}
+
+.cta-content {
+  display: flex; /* Zet flexbox in om de inhoud naast elkaar te plaatsen */
+  align-items: center; /* Zorgt ervoor dat het logo en de tekst verticaal gecentreerd worden */
+  justify-content: flex-start; /* Zorgt ervoor dat de elementen aan de linkerkant blijven */
+}
+
+.cta-content img {
+  max-height: 40px; /* Zorgt ervoor dat het logo niet te groot wordt */
+  margin-right: 15px; /* Voegt ruimte toe tussen het logo en de tekst */
+}
+
+.cta-content p {
+  margin: 0; /* Verwijdert de standaard marge van de paragraaf */
+  font-size: 14px; /* Pas de lettergrootte aan naar wens */
 }
