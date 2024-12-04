@@ -12,23 +12,13 @@ hamburger.addEventListener("click", () => {
 })
 
 
-/*document.querySelectorAll(".nav-link").forEach (n => n.
-addEventListener("click", () => {
-    // hamburger.classList.remove("active");
-    // navMenu.classList.remove("active");
-}))*/
-
 // second menu
 const firstListItem = document.querySelector(".nav-item:nth-of-type(1) a");
 
-
-// console.log(firstMenu);
-
 firstListItem.onclick = openSecMenu;
 
-function openSecMenu () {
-  firstMenu.classList.add("active")
-  // console.log("class toegevoegd!")
+function openSecMenu() {
+  firstMenu.classList.toggle("active"); // Toggle de actieve klasse om het menu te openen/sluiten
 }
 
   /****************/
@@ -219,4 +209,38 @@ function createCaroCarrousel(carrouselID) {
   createCaroCarrousel("bolletjesAndLinkButtons");
   //je kunt hier ook meerdere carrousellen activeren
 })();
+  
+
+
+
+/****************/
+/* deelknoppen */
+/****************/
+// Functie om de link te kopiëren naar het klembord
+function copyLink() {
+  // De URL die je wilt kopiëren
+  const link = "https://www.wwf.nl/webshop/kleding-accessoires/schoenen-en-sokken/retro-sportsokken-zwart-met-panda-logo-maat-35-40";
+
+  // Maak een tijdelijk tekstveld om de link te kopiëren
+  const tempInput = document.createElement("input");
+  tempInput.value = link;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  // Toon de melding
+  showToast();
+}
+
+// Functie om de toast-melding te tonen
+function showToast() {
+  const toast = document.getElementById("copy-toast");
+  toast.classList.add("show");
+
+  // Verberg de toast na 3 seconden
+  setTimeout(() => {
+      toast.classList.remove("show");
+  }, 3000);
+}
   
