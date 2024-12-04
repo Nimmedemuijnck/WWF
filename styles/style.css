@@ -98,7 +98,7 @@ transition: 0.7s ease;
 color: dodgerblue;
 }
 
-.hamburgr {
+.hamburger {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(3, 0.5em);
@@ -139,26 +139,22 @@ padding: 0;
 
 
 @media (max-width:768px) {
-.hamburger {
-  display: block;
-}
-
-.hamburger.active .bar:nth-child(2){
+.hamburger.active .bar:nth-child(3){
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1){
+.hamburger.active .bar:nth-child(2){
   transform: translate(0, 8px) rotate(45deg); 
 } 
 
-.hamburger.active .bar:nth-child(3){
+.hamburger.active .bar:nth-child(4){
   transform: translate(0, -8px) rotate(-45deg); 
 }
 
 .nav-menu {
   position: absolute;
   left: -100%;
-  top: 70px;
+  top: 90px;
   gap: 0;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
@@ -169,6 +165,15 @@ padding: 0;
 
 .nav-item {
   margin: 16px 0;
+}
+
+.nav-item:nth-of-type(1) ul {
+  position: absolute;
+  left: -100%;
+}
+
+.nav-item:nth-of-type(1) ul.active {
+  left: 0;
 }
 
 .nav-menu.active {
@@ -574,4 +579,92 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 .cta-content p {
   margin: 0; /* Verwijdert de standaard marge van de paragraaf */
   font-size: 14px; /* Pas de lettergrootte aan naar wens */
+}
+
+
+
+/**********************/
+/* Product info block 2 */
+/**********************/
+
+.product-info2 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333; /* Tekstkleur */
+  line-height: 1.6; /* Regelafstand */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px; /* Vergroot de breedte indien nodig */
+  margin: 20px auto;
+}
+
+.product-info2 ul {
+  list-style: none; /* Verwijdert standaard lijst-styling */
+  padding: 0;
+  margin: 0;
+}
+
+.product-info2 li {
+  display: flex; /* Maakt de inhoud horizontaal uitgelijnd */
+  align-items: flex-start;
+  margin-bottom: 10px; /* Ruimte tussen de punten */
+}
+
+.product-info2 .checkmark {
+  color: #3cb046; /* Groene kleur voor de checkmark */
+  font-weight: bold;
+  margin-right: 10px; /* Ruimte tussen de checkmark en tekst */
+}
+
+
+
+
+/**********************/
+/* voordeel pak container */
+/**********************/
+.voordeel-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.voordeel-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.voordeel-container h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.voordeel-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.voordeel-container a {
+  display: inline-block;
+  text-decoration: underline; /* Onderstreep de link */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #5d8b34; /* Donkergroene kleur */
+}
+
+/* Zorg ervoor dat de link op verschillende staten de juiste kleur heeft */
+.voordeel-container a:link {
+  color: #5d8b34; /* Donkergroen voor niet-bezochte links */
+}
+
+.voordeel-container a:visited {
+  color: #8bc34a; 
+}
+
+.voordeel-container a:hover {
+  color: #8bc34a; /* Lichter groen bij hover */
 }

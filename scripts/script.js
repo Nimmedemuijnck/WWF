@@ -1,19 +1,35 @@
-const hamburger = document.querySelector(".hamburgr");
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const firstMenu = document.querySelector(".nav-item:nth-of-type(1) ul")
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 
+    if (firstMenu.classList.contains("active")){
+      firstMenu.classList.remove("active");
+    }
 })
 
 
-document.querySelectorAll(".nav-link").forEach (n => n.
+/*document.querySelectorAll(".nav-link").forEach (n => n.
 addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+    // hamburger.classList.remove("active");
+    // navMenu.classList.remove("active");
+}))*/
 
+// second menu
+const firstListItem = document.querySelector(".nav-item:nth-of-type(1) a");
+
+
+// console.log(firstMenu);
+
+firstListItem.onclick = openSecMenu;
+
+function openSecMenu () {
+  firstMenu.classList.add("active")
+  // console.log("class toegevoegd!")
+}
 
   /****************/
   /* dropdown */
@@ -203,3 +219,4 @@ function createCaroCarrousel(carrouselID) {
   createCaroCarrousel("bolletjesAndLinkButtons");
   //je kunt hier ook meerdere carrousellen activeren
 })();
+  
