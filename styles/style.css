@@ -648,7 +648,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 
 /****************/
-/* deelknoppen */
+/* share buttons */
 /****************/
 /* Container voor sociale media */
 .social-share {
@@ -816,9 +816,10 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 /**********************/
 .RodeLijst {
   text-align: center;
-  background: #eae7d9;
+  background: #f6f5f2;
   padding: 20px;
   margin-top: 30px;  
+  margin-bottom: 30px;  
   border-radius: 8px;
   max-width: 400px;
 }
@@ -838,4 +839,192 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 15px;
   color: #555;
   margin-bottom: 20px;
+}
+
+
+
+
+
+/**********************/
+/* footer */
+/**********************/
+
+footer{
+  text-align: center;
+  background: #f5f3eb;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+footer p{
+font-size:12px;
+}
+
+
+/* deelknoppen */
+.social-footer {
+display: flex;
+gap: 15px;
+align-items: center;
+justify-content: center;
+margin-top:40px;
+margin-bottom:40px;
+
+}
+
+.social-footer .icon {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 1px solid #e2e0ce;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+transition: transform 0.3s ease, background-color 0.3s ease;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+outline: none; /* Geen focusrand bij klikken */
+}
+
+
+.social-footer .icon img {
+width: 90%; /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
+height: 90%; /* Houdt dezelfde verhouding als de breedte */
+object-fit: contain; /* Houdt de afbeelding netjes binnen de cirkel */
+border-radius: 50%; /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
+}
+
+
+/* over ons */
+.over-ons-footer{
+text-align: left;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 8px;
+max-width: 400px;
+}
+
+.over-ons-footer h1 {
+font-size: 12px;
+color: #333;
+margin: 10px 0;
+}
+
+.over-ons-footer p {
+font-size: 13px;
+color: #000;
+margin-bottom: 20px;
+}
+
+
+
+/* betalen */
+.betalen{
+text-align: left;
+padding-left: 15px;
+padding-right: 15px;
+max-width: 400px;
+border-bottom: 1px solid #ddd;
+width: 95%;
+padding: 10px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.betalen h1 {
+font-size: 12px;
+color: #333;
+margin: 10px 0;
+}
+
+.betalen p {
+font-size: 13px;
+color: #000;
+margin-bottom: 20px;
+}
+
+.betalen img:nth-of-type(1) {
+width: 40px;
+margin-right: 20px;
+}
+
+.betalen img:nth-of-type(2) {
+width: 55px;
+}
+
+/* sponsoren */
+.sponsoren {
+  text-align: left;
+  padding: 15px 10px;
+  padding-bottom: 0px;
+  max-width: 400px;
+  border-bottom: 1px solid #ddd;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Zorgt dat afbeeldingen en tekst apart worden behandeld */
+  align-items: stretch;
+}
+
+.sponsoren-images {
+  display: flex; /* Zet de afbeeldingen naast elkaar */
+  justify-content: space-between; /* Verdeel de ruimte gelijkmatig */
+  align-items: center; /* Zorg dat ze gecentreerd zijn op dezelfde hoogte */
+  margin-bottom: 20px; /* Ruimte tussen afbeeldingen en tekst */
+}
+
+.sponsoren-images img {
+  width: 60px;
+  height: 50px;
+}
+
+.sponsoren p {
+  text-align: right;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.sponsoren a {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+
+
+
+/* footerLogo */
+.footerLogo {
+display: flex;
+align-items: top; 
+justify-content: space-between; 
+padding: 15px;
+border-radius: 8px;
+max-width: 400px;
+width: 95%;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.footerLogo img {
+width: 50px; /* Breedte van de afbeelding */
+height: 80.2px; /* Hoogte van de afbeelding */
+margin-right: 15px; /* Ruimte tussen afbeelding en tekst */
+}
+
+.footerLogo h1 {
+margin: 0; /* Verwijder extra marges */
+margin-left: auto; /* Duwt de `h1` naar de rechterkant */
+text-align: right; /* Zorgt dat de tekst rechts uitgelijnd is */
+font-size: 20px;
+color: #000;
+line-height: 1; /* Zorgt voor nette uitlijning */
 }
