@@ -177,9 +177,9 @@ Color Contrast
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - dingen die meerdere keren voorkomen, kan ik weglaten.
+  - je moet een ul binnen een li maken.
+  - laat voor nu maar zitten, als er tijd over is kunnen we er nog naar kijken.
 - ...
 
 </details>
@@ -220,6 +220,9 @@ Color Contrast
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+ Mijn Vragen:
+  - hoe maak ik de bovenkant van de footer gebogen?
+  - hoe moet ik een zoekbalk in het menu zetten, en hoe kan ik zorgen dat hij daar blijft staan?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
