@@ -591,7 +591,6 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 600px; /* Vergroot de breedte indien nodig */
   margin: 20px auto;
   font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
 }
 
 .cta-content {
