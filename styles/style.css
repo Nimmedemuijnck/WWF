@@ -42,6 +42,42 @@ margin: 0;
 box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CircularXXWeb-Book';
+  src: url('../fonts/CircularXXWeb-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Fontello';
+  src: url('../fonts/fontello.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'CustomFont1';
+  src: url('../fonts/iJWKBXyIfDnIV7nBrXyw023e (1).woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'CustomFont2';
+  src: url('../fonts/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'CustomFont3';
+  src: url('../fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'WWFWebFont';
+  src: url('../fonts/wwf-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CustomFont4';
+  src: url('../fonts/WwkfxPmzE06v_ZW1XnrBGoIAUA.woff2') format('woff2');
+}
+
+
 header {
 background-color: rgb(255, 255, 255);
 box-shadow: #8f8b8b;
@@ -60,118 +96,122 @@ color: rgb(0, 0, 0);
 text-decoration: none;
 }
 
+body {
+  font-family: 'CircularXXWeb-Book', Arial, sans-serif;
+
+}
 
 
 /****************/
 /* Hamburger menu */
 /****************/
 .navbar {
-min-height: 70px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 24px;
-
-}
-
-.navbar p {
-color: rgb(0, 0, 0);
-}
-
-.nav-menu {
-display: flex;
-/*justify-content: space-between;*/
-align-items: left;
-padding-left: 20px;
-gap: 60px;
-z-index: 100;
-}
-
-.nav-branding {
-font-size: 2rem;
-}
-
-.nav-link {
-transition: 0.7s ease;
-}
-
-.nav-link:hover {
-color: dodgerblue;
-}
-
-.hamburger {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 0.5em);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-cursor: pointer;
-}
-
-#div1 { grid-area: 2 / 1 / 3 / 2; }
-#div2 { grid-area: 1 / 2 / 2 / 3; }
-#div3 { grid-area: 2 / 2 / 3 / 3; }
-#div4 { grid-area: 3 / 2 / 4 / 3; }
-
-.bar {
-display: block;
-width: 25px;
-height: 3px;
-margin: 5px auto;
--webkit-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-background-color: rgb(0, 0, 0);
-}
-
-.nav-branding {
-margin: 0; 
-padding: 0; 
-}
-
-.nav-logo {
-max-height: 95px; 
-width: auto; 
-display: block; 
-}
-
-.navbar {
-padding: 0; 
-}
-
-
-@media (max-width: 768px) {
-  /* Hamburger effect */
-  .hamburger.active .bar:nth-child(3) {
-    opacity: 0;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  
   }
-
-  .hamburger.active .bar:nth-child(2) {
-    transform: translate(0, 8px) rotate(45deg);
+  
+  .navbar p {
+  color: rgb(0, 0, 0);
   }
-
-  .hamburger.active .bar:nth-child(4) {
-    transform: translate(0, -8px) rotate(-45deg);
-  }
-
-  /* Het hoofdmenu dat van links schuift */
+  
   .nav-menu {
-    position: absolute;
-    left: -100%; /* Begin van de pagina */
-    top: 90px;
-    gap: 0;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%; /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
-    text-align: left;
-    transition: 0.3s;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: left;
+  padding-left: 20px;
+  gap: 60px;
+  z-index: 100;
   }
-
-  /* Actief menu van links schuiven */
-  .nav-menu.active {
-    left: 0; /* Het schuift in de pagina */
+  
+  .nav-branding {
+  font-size: 2rem;
   }
-
+  
+  .nav-link {
+  transition: 0.7s ease;
+  }
+  
+  .nav-link:hover {
+  color: dodgerblue;
+  }
+  
+  .hamburger {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 0.5em);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  cursor: pointer;
+  }
+  
+  #div1 { grid-area: 2 / 1 / 3 / 2; }
+  #div2 { grid-area: 1 / 2 / 2 / 3; }
+  #div3 { grid-area: 2 / 2 / 3 / 3; }
+  #div4 { grid-area: 3 / 2 / 4 / 3; }
+  
+  .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(0, 0, 0);
+  }
+  
+  .nav-branding {
+  margin: 0; 
+  padding: 0; 
+  }
+  
+  .nav-logo {
+  max-height: 95px; 
+  width: auto; 
+  display: block; 
+  }
+  
+  .navbar {
+  padding: 0; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    /* Hamburger effect */
+    .hamburger.active .bar:nth-child(3) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      transform: translate(0, 8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(4) {
+      transform: translate(0, -8px) rotate(-45deg);
+    }
+  
+    /* Het hoofdmenu dat van links schuift */
+    .nav-menu {
+      position: absolute;
+      left: -100%; /* Begin van de pagina */
+      top: 90px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%; /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
+      text-align: left;
+      transition: 0.3s;
+    }
+  
+    /* Actief menu van links schuiven */
+    .nav-menu.active {
+      left: 0; /* Het schuift in de pagina */
+    }
+  
   /* Tweede menu, dat van rechts schuift */
   .nav-item:nth-of-type(1) ul {
     position: absolute;
@@ -184,33 +224,33 @@ padding: 0;
     height: 100%; /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
     text-align: left;
     padding-left: 20px;
-    gap: 0px; /* Voeg de gewenste ruimte tussen de items toe */
-    transition: 0.3s;
+    transition: 0.3s ease-in-out; /* Zorg ervoor dat de overgang soepel is */
   }
-
+  
   /* Het tweede menu schuift van rechts naar binnen */
   .nav-item:nth-of-type(1) ul.active {
     right: 0; /* Het schuift van rechts naar binnen */
   }
-
-  .nav-item {
-    padding: 16px 0;
-  }
+  
+  
+    .nav-item {
+      padding: 16px 0;
+    }
+    }
+    
+  
+  .nav-item:nth-of-type(1) ul {
+    position: absolute;
+    left: -100%;
   }
   
-
-.nav-item:nth-of-type(1) ul {
-  position: absolute;
-  left: -100%;
-}
-
-.nav-item:nth-of-type(1) ul.active {
-  left: 0;
-}
-
-.nav-menu.active {
-  left: 0;
-}
+  .nav-item:nth-of-type(1) ul.active {
+    left: 0;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
 
 
 
@@ -230,84 +270,6 @@ padding: 0;
   font-weight: 500; /* Vetgedrukte tekst */
   padding: 10px 15px;
 }
-
-
-
-/***********************/
-/* Dropdowns */
-
-.dropdown-container {
-border-bottom: 1px solid #ddd;
-width: 95%;
-padding: 10px;
-margin: 0 auto;
-overflow: hidden;
-}
-
-.dropdown-toggle {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-padding: 15px;
-background: none;
-border: none;
-outline: none;
-cursor: pointer;
-font-size: 16px;
-color: #333;
-}
-
-.dropdown-arrow {
-width: 12px;
-height: 12px;
-border: solid #333;
-border-width: 0 2px 2px 0;
-transform: rotate(45deg);
-transition: transform 0.3s ease;
-}
-
-.dropdown-toggle.active .dropdown-arrow {
-transform: rotate(-135deg);
-}
-
-.dropdown-content {
-display: none;
-padding: 15px;
-font-size: 14px;
-color: #555;
-background-color: #ffffff;
-border-top: 1px solid #ddd;
-}
-
-.dropdown-content img {
-width: 100%; 
-height: auto; 
-object-fit: contain; 
-max-width: 100%; 
-display: block; 
-margin-top: 15px; 
-}
-
-.dropdown-content p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-}
-
-
-.dropdown-content.show {
-display: block;
-}
-
-
-
-
-
-
 
 /****************/
 /* Slide show */
@@ -473,6 +435,86 @@ right: 0.5em; /* Schuift naar binnen als de carrousel wordt gehighlighted */
 
 
 
+
+/***********************/
+/* Dropdowns */
+
+.dropdown-container {
+border-bottom: 1px solid #ddd;
+width: 98%;
+margin: 0 auto;
+overflow: hidden;
+padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.dropdown-toggle {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 15px;
+padding-left: 0px;
+background: none;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 16px;
+color: #333;
+}
+
+.dropdown-arrow {
+width: 12px;
+height: 12px;
+border: solid #333;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.active .dropdown-arrow {
+transform: rotate(-135deg);
+}
+
+.dropdown-content {
+display: none;
+font-size: 14px;
+font-family: 'Rubic', sans-serif;
+line-height: 21px;
+color: #555;
+border-top: 1px solid #ddd;
+}
+
+.dropdown-content img {
+width: 100%; 
+height: auto; 
+object-fit: contain; 
+max-width: 100%; 
+display: block; 
+margin-top: 15px; 
+}
+
+.dropdown-content p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+
+.dropdown-content.show {
+display: block;
+}
+
+
+
+
+
+
+
+
 /**********************/
 /* Product info block */
 /**********************/
@@ -496,21 +538,24 @@ align-items: center; /* Zorgt ervoor dat de bovenkant van h1 en prijs op dezelfd
 margin-bottom: 15px;
 }
 
-/* Producttitel */
+
 .product-title {
-font-size: 18px;
-font-weight: bold;
-color: #333;
-margin-bottom: 0;
-text-align: left; /* Uitlijning aan de linkerzijde */
-line-height: 1.2; /* Zorgt ervoor dat de tekst mooi uitgelijnd is */
+  font-family: 'WWFWebFont', serif;
+  font-size: 24px;
+  letter-spacing: 1.17px;
+  color: #333;
+  margin-bottom: 0;
+  text-align: left; /* Uitlijning aan de linkerzijde */
+  line-height: 1.2; /* Zorgt ervoor dat de tekst mooi uitgelijnd is */
 }
+
 
 /* Zorg ervoor dat de prijs rechts wordt uitgelijnd */
 .product-price {
-font-size: 20px;
+font-size: 16px;
+font-family: 'Rubic', sans-serif;
 color: #4caf50; /* Groen voor de prijs */
-font-weight: bold;
+font-weight: 700;
 margin: 0;
 text-align: right; /* Uitlijning aan de rechterzijde */
 line-height: 1.2; /* Zorgt ervoor dat de prijs goed uitgelijnd is met de titel */
@@ -586,9 +631,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 /****************************/
 .call-to-action {
   background-color: #f6f5f2;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 600px; /* Vergroot de breedte indien nodig */
+  padding: 22px;
+  max-width: 95%; /* Vergroot de breedte indien nodig */
   margin: 20px auto;
   font-family: Arial, sans-serif;
 }
@@ -607,6 +651,10 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 .cta-content p {
   margin: 0; /* Verwijdert de standaard marge van de paragraaf */
   font-size: 14px; /* Pas de lettergrootte aan naar wens */
+  font-family: 'Rubic', sans-serif;
+  line-height: 22px;
+  padding-left: 22px;
+
 }
 
 
@@ -616,8 +664,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 /**********************/
 
 .product-info2 {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 14px; /* Pas de lettergrootte aan naar wens */
+  font-family: 'Rubic', sans-serif;
   color: #333; /* Tekstkleur */
   line-height: 1.6; /* Regelafstand */
   border-radius: 10px;
@@ -658,8 +706,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 /* Algemene styling voor de iconen */
 .social-share .icon {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #eae7d9;
   display: flex;
@@ -724,13 +772,19 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .voordeel-container h1 {
-  font-size: 1.5rem;
   color: #333;
   margin: 10px 0;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 300;
+  font-family: 'Rubic', sans-serif;
+
 }
 
 .voordeel-container p {
   font-size: 1rem;
+  font-family: 'Rubic', sans-serif;
+
   color: #555;
   margin-bottom: 20px;
 }
@@ -1027,3 +1081,5 @@ font-size: 20px;
 color: #000;
 line-height: 1; /* Zorgt voor nette uitlijning */
 }
+
+

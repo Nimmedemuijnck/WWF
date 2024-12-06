@@ -1,18 +1,18 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const firstMenu = document.querySelector(".nav-item:nth-of-type(1) ul")
+const firstMenu = document.querySelector(".nav-item:nth-of-type(1) ul");
+const backButton = document.querySelector(".nav-item:nth-of-type(1) ul .nav-item a[href='#']");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 
-    if (firstMenu.classList.contains("active")){
-      firstMenu.classList.remove("active");
-    }
-})
+  if (firstMenu.classList.contains("active")) {
+    firstMenu.classList.remove("active");
+  }
+});
 
-
-// second menu
+// Open/Sluit het tweede menu
 const firstListItem = document.querySelector(".nav-item:nth-of-type(1) a");
 
 firstListItem.onclick = openSecMenu;
@@ -20,6 +20,12 @@ firstListItem.onclick = openSecMenu;
 function openSecMenu() {
   firstMenu.classList.toggle("active"); // Toggle de actieve klasse om het menu te openen/sluiten
 }
+
+// Wanneer de 'Terug' link wordt aangeklikt, sluit het tweede menu
+backButton.addEventListener("click", function (e) {
+  e.preventDefault(); // Voorkomt dat de pagina herlaadt
+  firstMenu.classList.remove("active"); // Verwijder de 'active' klasse van het tweede menu
+});
 
   /****************/
   /* dropdown */
@@ -243,4 +249,5 @@ function showToast() {
       toast.classList.remove("show");
   }, 3000);
 }
+
   
