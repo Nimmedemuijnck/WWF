@@ -243,17 +243,21 @@ Color Contrast
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/eindversie-p1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="images/eindversie-p2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="images/eindversie-hoofdmenu.png" width="375px" alt="uitomst opdracht 1">
+  <img src="images/eindversie-submenu.png" width="375px" alt="uitomst opdracht 1">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe je moet letten op toegankelijkheid. Ook heb ik geleerd hoe je een slideshow kan maken en hoe je grid en flexbox gebruikt.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het is me niet gelukt om me hamburger menu helemaal goed te krijgen. het is me niet gelukt om de zoekbalk erin te krijgen. Ook kreeg ik het niet voor elkaar om de slideshow op de 2e pagina te laten werken.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
