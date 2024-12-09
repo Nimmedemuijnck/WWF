@@ -103,12 +103,12 @@ Color Contrast
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="images/breakdownschets-1.jpg" width="375px" alt="breakdown van de hele pagina">
-  <img src="images/breakdownschets-2.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/breakdownschets-1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/breakdownschets-2.png" width="375px" alt="breakdown van de hele pagina">
 
 
   ### dynamisch deel (bijv menu): 
-  <img src="images/breakdownschets-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/breakdownschets-menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   
 
