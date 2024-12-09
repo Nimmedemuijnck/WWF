@@ -275,8 +275,14 @@ Color Contrast
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. [bron 1](https://www.youtube.com/watch?v=flItyHiDm7E&t=18s)
+  2. [bron 2](https://www.youtube.com/watch?v=XM7sEpl0f7c)
+  3. [bron 3](https://codepen.io/shooft/pen/yLKjzWa?editors=1010)
+  4. [bron 4](https://cssgrid-generator.netlify.app/)
+  5. [bron 5](https://www.wwf.nl/wat-we-doen)
+  6. [bron 6](https://www.wwf.nl/webshop/kleding-accessoires/schoenen-en-sokken/retro-sportsokken-zwart-met-panda-logo-maat-35-40)
+  7. [bron 7](Opdrachten in de les)
+
+
 
 </details>
