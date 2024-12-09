@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 
@@ -14,9 +16,9 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    /* startje */
-    --color-text:#111;
-    --color-background:#eee;
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
 }
 
 
@@ -37,9 +39,9 @@ https://www.youtube.com/watch?v=flItyHiDm7E&t=18s
 
 
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -79,21 +81,21 @@ box-sizing: border-box;
 
 
 header {
-background-color: rgb(255, 255, 255);
-box-shadow: #8f8b8b;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: #8f8b8b;
 }
 
 main {
-background-color: #FAFAFA;
+  background-color: #FAFAFA;
 }
 
 li {
-list-style: none;
+  list-style: none;
 }
 
 a {
-color: rgb(0, 0, 0);
-text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 body {
@@ -111,49 +113,60 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  
-  }
-  
-  .navbar p {
+
+}
+
+.navbar p {
   color: rgb(0, 0, 0);
-  }
-  
-  .nav-menu {
+}
+
+.nav-menu {
   display: flex;
   /*justify-content: space-between;*/
   align-items: left;
   padding-left: 20px;
   gap: 60px;
   z-index: 100;
-  }
-  
-  .nav-branding {
+}
+
+.nav-branding {
   font-size: 2rem;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
   transition: 0.7s ease;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
   color: dodgerblue;
-  }
-  
-  .hamburger {
+}
+
+.hamburger {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 0.5em);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   cursor: pointer;
-  }
-  
-  #div1 { grid-area: 2 / 1 / 3 / 2; }
-  #div2 { grid-area: 1 / 2 / 2 / 3; }
-  #div3 { grid-area: 2 / 2 / 3 / 3; }
-  #div4 { grid-area: 3 / 2 / 4 / 3; }
-  
-  .bar {
+}
+
+#div1 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#div4 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -161,96 +174,104 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: rgb(0, 0, 0);
+}
+
+.nav-branding {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-logo {
+  max-height: 95px;
+  width: auto;
+  display: block;
+}
+
+.navbar {
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Hamburger effect */
+  .hamburger.active .bar:nth-child(3) {
+    opacity: 0;
   }
-  
-  .nav-branding {
-  margin: 0; 
-  padding: 0; 
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translate(0, 8px) rotate(45deg);
   }
-  
-  .nav-logo {
-  max-height: 95px; 
-  width: auto; 
-  display: block; 
+
+  .hamburger.active .bar:nth-child(4) {
+    transform: translate(0, -8px) rotate(-45deg);
   }
-  
-  .navbar {
-  padding: 0; 
+
+  /* Het hoofdmenu dat van links schuift */
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    /* Begin van de pagina */
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
+    text-align: left;
+    transition: 0.3s;
   }
-  
-  
-  @media (max-width: 768px) {
-    /* Hamburger effect */
-    .hamburger.active .bar:nth-child(3) {
-      opacity: 0;
-    }
-  
-    .hamburger.active .bar:nth-child(2) {
-      transform: translate(0, 8px) rotate(45deg);
-    }
-  
-    .hamburger.active .bar:nth-child(4) {
-      transform: translate(0, -8px) rotate(-45deg);
-    }
-  
-    /* Het hoofdmenu dat van links schuift */
-    .nav-menu {
-      position: absolute;
-      left: -100%; /* Begin van de pagina */
-      top: 90px;
-      gap: 0;
-      flex-direction: column;
-      background-color: rgb(255, 255, 255);
-      width: 100%;
-      height: 100%; /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
-      text-align: left;
-      transition: 0.3s;
-    }
-  
-    /* Actief menu van links schuiven */
-    .nav-menu.active {
-      left: 0; /* Het schuift in de pagina */
-    }
-  
+
+  /* Actief menu van links schuiven */
+  .nav-menu.active {
+    left: 0;
+    /* Het schuift in de pagina */
+  }
+
   /* Tweede menu, dat van rechts schuift */
   .nav-item:nth-of-type(1) ul {
     position: absolute;
-    right: -100%; /* Begin buiten het scherm aan de rechterkant */
+    right: -100%;
+    /* Begin buiten het scherm aan de rechterkant */
     top: 0px;
     gap: 0;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%; /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
+    height: 100%;
+    /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
     text-align: left;
     padding-left: 20px;
-    transition: 0.3s ease-in-out; /* Zorg ervoor dat de overgang soepel is */
+    transition: 0.3s ease-in-out;
+    /* Zorg ervoor dat de overgang soepel is */
   }
-  
+
   /* Het tweede menu schuift van rechts naar binnen */
   .nav-item:nth-of-type(1) ul.active {
-    right: 0; /* Het schuift van rechts naar binnen */
+    right: 0;
+    /* Het schuift van rechts naar binnen */
   }
-  
-  
-    .nav-item {
-      padding: 16px 0;
-    }
-    }
-    
-  
-  .nav-item:nth-of-type(1) ul {
-    position: absolute;
-    left: -100%;
+
+
+  .nav-item {
+    padding: 16px 0;
   }
-  
-  .nav-item:nth-of-type(1) ul.active {
-    left: 0;
-  }
-  
-  .nav-menu.active {
-    left: 0;
-  }
+}
+
+
+.nav-item:nth-of-type(1) ul {
+  position: absolute;
+  left: -100%;
+}
+
+.nav-item:nth-of-type(1) ul.active {
+  left: 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
 
 
 
@@ -265,9 +286,12 @@ body {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #333; /* Donkergrijze tekstkleur */
-  font-size: 16px; /* Grootte van de tekst */
-  font-weight: 500; /* Vetgedrukte tekst */
+  color: #333;
+  /* Donkergrijze tekstkleur */
+  font-size: 16px;
+  /* Grootte van de tekst */
+  font-weight: 500;
+  /* Vetgedrukte tekst */
   padding: 10px 15px;
 }
 
@@ -277,68 +301,77 @@ body {
 .caroCarrousel {
   /* basis waarden die door de hele carrousel gebruikt worden */
   /* kun je zelf aanpassen */
-  --caroCarrouselMainColor:#333;
-  --caroCarrouselAccentColor:#1b75b3;
-  --caroCarrouselShadeColor:#ddd9;
+  --caroCarrouselMainColor: #333;
+  --caroCarrouselAccentColor: #1b75b3;
+  --caroCarrouselShadeColor: #ddd9;
 
   position: relative;
-  overflow: hidden; /* om de linkbuttons te verbergen */
-  outline:none;
+  overflow: hidden;
+  /* om de linkbuttons te verbergen */
+  outline: none;
 
 
 
-  max-width: 98%; /* Beperkt de breedte tot 80% van de pagina */
-  margin: 15px auto; /* Voegt ruimte toe rondom en centreert de slideshow */  
-  margin-bottom: 10px;  
-  border: 2px; 
-  padding: 10px; /* Optioneel: binnenruimte */
-  
+  max-width: 98%;
+  /* Beperkt de breedte tot 80% van de pagina */
+  margin: 15px auto;
+  /* Voegt ruimte toe rondom en centreert de slideshow */
+  margin-bottom: 10px;
+  border: 2px;
+  padding: 10px;
+  /* Optioneel: binnenruimte */
+
 }
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   .caroCarrousel {
-    --caroCarrouselMainColor:#ccc;
-    --caroCarrouselShadeColor:#4449;
+    --caroCarrouselMainColor: #ccc;
+    --caroCarrouselShadeColor: #4449;
   }
 }
 
 
 /************************************/
 /* de carrousel elementen container */
-.caroCarrousel > ul {
-  margin: 0; padding: 0;
+.caroCarrousel>ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  
+
   /* handmatig scrollen is mogelijk */
   overflow: hidden;
-  
+
   /* snappen als er gescrolled wordt - andere helft bij li */
   scroll-snap-type: inline mandatory;
-  
+
   /* smooth scrollen */
   scroll-behavior: smooth;
-  
+
   /* scrollbar zoveel mogelijk verbergen */
-  -webkit-overflow-scrolling: touch; /* voor iOS*/
-  -ms-overflow-style: none; /* voor IE */
-  scrollbar-width: none; /* voor firefox */
+  -webkit-overflow-scrolling: touch;
+  /* voor iOS*/
+  -ms-overflow-style: none;
+  /* voor IE */
+  scrollbar-width: none;
+  /* voor firefox */
 }
 
-.caroCarrousel > ul::-webkit-scrollbar {
+.caroCarrousel>ul::-webkit-scrollbar {
   /* scrollbar zoveel mogelijk verbergen */
-  display: none; /* voor chrome, safari en edge*/
+  display: none;
+  /* voor chrome, safari en edge*/
 }
 
 
 /**************************/
 /* de carrousel elementen */
-.caroCarrousel > ul li {
+.caroCarrousel>ul li {
   flex-basis: 100%;
   flex-shrink: 0;
   /* snappen als er gescrolled wordt - andere helft bij ul */
-  scroll-snap-align:center;
+  scroll-snap-align: center;
 }
 
 
@@ -346,7 +379,7 @@ body {
 /* de carrousel elementen content */
 
 /* de stijlen voor jouw content hier */
-.caroCarrousel > ul li > img {
+.caroCarrousel>ul li>img {
   display: block;
   width: 100%;
 }
@@ -358,40 +391,53 @@ body {
 
 .caroCarrousel nav ul {
   left: 50%;
-  bottom: -2px; /* Zet de bolletjes iets lager, zodat ze niet uit de container vallen */
+  bottom: -2px;
+  /* Zet de bolletjes iets lager, zodat ze niet uit de container vallen */
   margin: 0;
   padding: 10px;
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 0.5em;
-  z-index: 10; /* Zorg ervoor dat de bolletjes boven de carrousel liggen */
+  z-index: 10;
+  /* Zorg ervoor dat de bolletjes boven de carrousel liggen */
 }
 
-.caroCarrousel > nav li {
-  flex-basis: 0.7em; /* nog kleinere bolletjes */
+.caroCarrousel>nav li {
+  flex-basis: 0.7em;
+  /* nog kleinere bolletjes */
   aspect-ratio: 1/1;
 }
 
-.caroCarrousel > nav a {
+.caroCarrousel>nav a {
   display: block;
-  width: 0.7em; /* maak de bolletjes kleiner */
-  height: 0.7em; /* maak de bolletjes kleiner */
+  width: 0.7em;
+  /* maak de bolletjes kleiner */
+  height: 0.7em;
+  /* maak de bolletjes kleiner */
   text-decoration: none;
-  color: #fff; /* kleur van de bolletjes */
-  background-color: #c1c1c1; /* kleur van de bolletjes */
-  border-radius: 50%; /* maakt de bolletjes rond */
+  color: #fff;
+  /* kleur van de bolletjes */
+  background-color: #c1c1c1;
+  /* kleur van de bolletjes */
+  border-radius: 50%;
+  /* maakt de bolletjes rond */
   outline: none;
-  transition: background-color 0.3s, transform 0.3s; /* overgang voor hover en active state */
-}
-.caroCarrousel > nav a:hover,
-.caroCarrousel > nav a:focus {
-  background-color: #368714; /* accentkleur bij hover */
-  transform: scale(1.2); /* vergroting bij hover */
+  transition: background-color 0.3s, transform 0.3s;
+  /* overgang voor hover en active state */
 }
 
-.caroCarrousel > nav a.current {
-  background-color: #368714; /* de kleur van het actieve bolletje */
+.caroCarrousel>nav a:hover,
+.caroCarrousel>nav a:focus {
+  background-color: #368714;
+  /* accentkleur bij hover */
+  transform: scale(1.2);
+  /* vergroting bij hover */
+}
+
+.caroCarrousel>nav a.current {
+  background-color: #368714;
+  /* de kleur van het actieve bolletje */
 }
 
 
@@ -399,38 +445,42 @@ body {
 /****************************/
 /* PREV EN NEXT LINKBUTTONS */
 /****************************/
-.caroCarrousel > a {
-position: absolute;
-width: 2.8em;
-height: 2.8em; 
-top: 50%;
-transform: translateY(-50%);
-color: #097430;
-background-color: #ffffff;
-outline: none;
-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
-display: grid;
-place-items: center;
-border-radius: 50%; /* Maakt het een cirkel */
-transition: background-color 0.3s;
+.caroCarrousel>a {
+  position: absolute;
+  width: 2.8em;
+  height: 2.8em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #097430;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  /* Maakt het een cirkel */
+  transition: background-color 0.3s;
 }
 
-.caroCarrousel > a[href="previous"] {
-left: 1em; /* Zorgt ervoor dat de linkerpijl aan de linkerzijde blijft */
+.caroCarrousel>a.previous {
+  left: 1em;
 }
 
-.caroCarrousel > a[href="next"] {
-right: 1em; /* Zorgt ervoor dat de rechterpijl aan de rechterzijde blijft */
+.caroCarrousel>a.next {
+  right: 1em;
 }
 
-.caroCarrousel:hover > a[href="previous"],
-.caroCarrousel:focus-within > a[href="previous"] {
-left: 0.5em; /* Schuift naar binnen als de carrousel wordt gehighlighted */
+
+.caroCarrousel:hover>a.previous,
+.caroCarrousel:focus-within>a.previous {
+  left: 0.5em;
+  /* Schuift naar binnen als de carrousel wordt gehighlighted */
 }
 
-.caroCarrousel:hover > a[href="next"],
-.caroCarrousel:focus-within > a[href="next"] {
-right: 0.5em; /* Schuift naar binnen als de carrousel wordt gehighlighted */
+.caroCarrousel:hover>a.next,
+.caroCarrousel:focus-within>a.next {
+  right: 0.5em;
+  /* Schuift naar binnen als de carrousel wordt gehighlighted */
 }
 
 
@@ -440,58 +490,58 @@ right: 0.5em; /* Schuift naar binnen als de carrousel wordt gehighlighted */
 /* Dropdowns */
 
 .dropdown-container {
-border-bottom: 1px solid #ddd;
-width: 98%;
-margin: 0 auto;
-overflow: hidden;
-padding-right: 7.5px;
+  border-bottom: 1px solid #ddd;
+  width: 98%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-right: 7.5px;
   padding-left: 7.5px;
 }
 
 .dropdown-toggle {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-padding: 15px;
-padding-left: 0px;
-background: none;
-border: none;
-outline: none;
-cursor: pointer;
-font-size: 16px;
-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  padding-left: 0px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
 }
 
 .dropdown-arrow {
-width: 12px;
-height: 12px;
-border: solid #333;
-border-width: 0 2px 2px 0;
-transform: rotate(45deg);
-transition: transform 0.3s ease;
+  width: 12px;
+  height: 12px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
 }
 
 .dropdown-toggle.active .dropdown-arrow {
-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .dropdown-content {
-display: none;
-font-size: 14px;
-font-family: 'Rubic', sans-serif;
-line-height: 21px;
-color: #555;
-border-top: 1px solid #ddd;
+  display: none;
+  font-size: 14px;
+  font-family: 'Rubic', sans-serif;
+  line-height: 21px;
+  color: #555;
+  border-top: 1px solid #ddd;
 }
 
 .dropdown-content img {
-width: 100%; 
-height: auto; 
-object-fit: contain; 
-max-width: 100%; 
-display: block; 
-margin-top: 15px; 
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 100%;
+  display: block;
+  margin-top: 15px;
 }
 
 .dropdown-content p {
@@ -505,7 +555,7 @@ margin-top: 15px;
 
 
 .dropdown-content.show {
-display: block;
+  display: block;
 }
 
 
@@ -520,22 +570,25 @@ display: block;
 /**********************/
 /* Algemene styling voor de sectie */
 .product-section {
-background-color: #FAFAFA;
-border-radius: 10px;
-padding: 20px;
-max-width: 400px; /* Beperkt de breedte */
-margin: 20px auto;
-font-family: Arial, sans-serif;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
-text-align: center;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  /* Beperkt de breedte */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtiele schaduw */
+  text-align: center;
 }
 
 /* Product header - flexbox voor uitlijning */
 .product-header {
-display: flex;
-justify-content: space-between;
-align-items: center; /* Zorgt ervoor dat de bovenkant van h1 en prijs op dezelfde hoogte zitten */
-margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Zorgt ervoor dat de bovenkant van h1 en prijs op dezelfde hoogte zitten */
+  margin-bottom: 15px;
 }
 
 
@@ -545,84 +598,102 @@ margin-bottom: 15px;
   letter-spacing: 1.17px;
   color: #333;
   margin-bottom: 0;
-  text-align: left; /* Uitlijning aan de linkerzijde */
-  line-height: 1.2; /* Zorgt ervoor dat de tekst mooi uitgelijnd is */
+  text-align: left;
+  /* Uitlijning aan de linkerzijde */
+  line-height: 1.2;
+  /* Zorgt ervoor dat de tekst mooi uitgelijnd is */
 }
 
 
 /* Zorg ervoor dat de prijs rechts wordt uitgelijnd */
 .product-price {
-font-size: 16px;
-font-family: 'Rubic', sans-serif;
-color: #4caf50; /* Groen voor de prijs */
-font-weight: 700;
-margin: 0;
-text-align: right; /* Uitlijning aan de rechterzijde */
-line-height: 1.2; /* Zorgt ervoor dat de prijs goed uitgelijnd is met de titel */
+  font-size: 16px;
+  font-family: 'Rubic', sans-serif;
+  color: #4caf50;
+  /* Groen voor de prijs */
+  font-weight: 700;
+  margin: 0;
+  text-align: right;
+  /* Uitlijning aan de rechterzijde */
+  line-height: 1.2;
+  /* Zorgt ervoor dat de prijs goed uitgelijnd is met de titel */
 }
 
 /* Verwijder de puntmarker van de li */
 li[aria-label="dropdown"] {
-list-style-type: none; /* Verwijdert de puntmarker */
-padding: 0;
+  list-style-type: none;
+  /* Verwijdert de puntmarker */
+  padding: 0;
 }
 
 /* Dropdown styling */
 .custom-select {
-position: relative;
-width: 100%;
-margin: 10px 0;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .custom-select select {
-appearance: none;
--moz-appearance: none;
--webkit-appearance: none;
-width: 100%;
-padding: 10px 16px;
-border: 1px solid #ccc; /* Dunne grijze rand */
-border-radius: 50px; /* Ronde uiteinden */
-background-color: #fff; /* Witte achtergrond */
-font-size: 16px;
-color: #333; /* Tekstkleur */
-cursor: pointer;
-outline: none;
-transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Soepel overgangseffect */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  /* Dunne grijze rand */
+  border-radius: 50px;
+  /* Ronde uiteinden */
+  background-color: #fff;
+  /* Witte achtergrond */
+  font-size: 16px;
+  color: #333;
+  /* Tekstkleur */
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  /* Soepel overgangseffect */
 }
 
 .custom-select::after {
-content: '';
-position: absolute;
-right: 20px;
-top: 50%;
-transform: translateY(-50%);
-width: 0;
-height: 0;
-border-left: 8px solid transparent; /* Pijl links */
-border-right: 8px solid transparent; /* Pijl rechts */
-border-top: 6px solid #666; /* Naar beneden wijzende pijl */
-pointer-events: none;
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  /* Pijl links */
+  border-right: 8px solid transparent;
+  /* Pijl rechts */
+  border-top: 6px solid #666;
+  /* Naar beneden wijzende pijl */
+  pointer-events: none;
 }
 
 /* Knop styling */
 .add-to-cart {
-display: inline-block;
-width: 100%; /* Zorgt ervoor dat de knop even breed is als de dropdown */
-padding: 12px 20px;
-background: linear-gradient(135deg, #9bc469, #769c4e); /* Groene gradient */
-color: white;
-font-size: 14px;
-font-weight: bold;
-text-transform: uppercase;
-border: none;
-border-radius: 50px; /* Ronde knop */
-cursor: pointer;
-transition: background 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  /* Zorgt ervoor dat de knop even breed is als de dropdown */
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #9bc469, #769c4e);
+  /* Groene gradient */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  /* Ronde knop */
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .add-to-cart:hover {
-background: linear-gradient(135deg, #769c4e, #9bc469); /* Omgekeerde gradient */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #769c4e, #9bc469);
+  /* Omgekeerde gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -632,25 +703,33 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 .call-to-action {
   background-color: #f6f5f2;
   padding: 22px;
-  max-width: 95%; /* Vergroot de breedte indien nodig */
+  max-width: 95%;
+  /* Vergroot de breedte indien nodig */
   margin: 20px auto;
   font-family: Arial, sans-serif;
 }
 
 .cta-content {
-  display: flex; /* Zet flexbox in om de inhoud naast elkaar te plaatsen */
-  align-items: center; /* Zorgt ervoor dat het logo en de tekst verticaal gecentreerd worden */
-  justify-content: flex-start; /* Zorgt ervoor dat de elementen aan de linkerkant blijven */
+  display: flex;
+  /* Zet flexbox in om de inhoud naast elkaar te plaatsen */
+  align-items: center;
+  /* Zorgt ervoor dat het logo en de tekst verticaal gecentreerd worden */
+  justify-content: flex-start;
+  /* Zorgt ervoor dat de elementen aan de linkerkant blijven */
 }
 
 .cta-content img {
-  max-height: 40px; /* Zorgt ervoor dat het logo niet te groot wordt */
-  margin-right: 15px; /* Voegt ruimte toe tussen het logo en de tekst */
+  max-height: 40px;
+  /* Zorgt ervoor dat het logo niet te groot wordt */
+  margin-right: 15px;
+  /* Voegt ruimte toe tussen het logo en de tekst */
 }
 
 .cta-content p {
-  margin: 0; /* Verwijdert de standaard marge van de paragraaf */
-  font-size: 14px; /* Pas de lettergrootte aan naar wens */
+  margin: 0;
+  /* Verwijdert de standaard marge van de paragraaf */
+  font-size: 14px;
+  /* Pas de lettergrootte aan naar wens */
   font-family: 'Rubic', sans-serif;
   line-height: 22px;
   padding-left: 22px;
@@ -664,32 +743,41 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 /**********************/
 
 .product-info2 {
-  font-size: 14px; /* Pas de lettergrootte aan naar wens */
+  font-size: 14px;
+  /* Pas de lettergrootte aan naar wens */
   font-family: 'Rubic', sans-serif;
-  color: #333; /* Tekstkleur */
-  line-height: 1.6; /* Regelafstand */
+  color: #333;
+  /* Tekstkleur */
+  line-height: 1.6;
+  /* Regelafstand */
   border-radius: 10px;
   padding: 20px;
-  max-width: 600px; /* Vergroot de breedte indien nodig */
+  max-width: 600px;
+  /* Vergroot de breedte indien nodig */
   margin: 20px auto;
 }
 
 .product-info2 ul {
-  list-style: none; /* Verwijdert standaard lijst-styling */
+  list-style: none;
+  /* Verwijdert standaard lijst-styling */
   padding: 0;
   margin: 0;
 }
 
 .product-info2 li {
-  display: flex; /* Maakt de inhoud horizontaal uitgelijnd */
+  display: flex;
+  /* Maakt de inhoud horizontaal uitgelijnd */
   align-items: flex-start;
-  margin-bottom: 10px; /* Ruimte tussen de punten */
+  margin-bottom: 10px;
+  /* Ruimte tussen de punten */
 }
 
 .product-info2 .checkmark {
-  color: #3cb046; /* Groene kleur voor de checkmark */
+  color: #3cb046;
+  /* Groene kleur voor de checkmark */
   font-weight: bold;
-  margin-right: 10px; /* Ruimte tussen de checkmark en tekst */
+  margin-right: 10px;
+  /* Ruimte tussen de checkmark en tekst */
 }
 
 
@@ -718,17 +806,23 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  border: none; /* Geen randen rond de iconen */
-  outline: none; /* Geen focusrand bij klikken */
+  border: none;
+  /* Geen randen rond de iconen */
+  outline: none;
+  /* Geen focusrand bij klikken */
 }
 
 
 /* Styling voor afbeeldingen binnen iconen */
 .social-share .icon img {
-  width: 90%; /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
-  height: 90%; /* Houdt dezelfde verhouding als de breedte */
-  object-fit: contain; /* Houdt de afbeelding netjes binnen de cirkel */
-  border-radius: 50%; /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
+  width: 90%;
+  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
+  height: 90%;
+  /* Houdt dezelfde verhouding als de breedte */
+  object-fit: contain;
+  /* Houdt de afbeelding netjes binnen de cirkel */
+  border-radius: 50%;
+  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
 }
 
 /* Toast-melding voor "link gekopieerd" */
@@ -736,22 +830,26 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 10px;
   right: 10px;
-  background-color: #4caf50; /* Groen zoals op de WWF-site */
+  background-color: #4caf50;
+  /* Groen zoals op de WWF-site */
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0; /* Verborgen standaard */
+  opacity: 0;
+  /* Verborgen standaard */
   transition: opacity 0.5s ease, transform 0.5s ease;
-  transform: translateY(-20px); /* Verschijnt van boven naar beneden */
+  transform: translateY(-20px);
+  /* Verschijnt van boven naar beneden */
   z-index: 1000;
 }
 
 /* Toon de toast */
 .copy-toast.show {
   opacity: 1;
-  transform: translateY(0); /* Beweegt terug naar zijn oorspronkelijke positie */
+  transform: translateY(0);
+  /* Beweegt terug naar zijn oorspronkelijke positie */
 }
 
 
@@ -791,24 +889,28 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 .voordeel-container a {
   display: inline-block;
-  text-decoration: underline; /* Onderstreep de link */
+  text-decoration: underline;
+  /* Onderstreep de link */
   padding: 10px 20px;
   border-radius: 4px;
   font-size: 1rem;
-  color: #5d8b34; /* Donkergroene kleur */
+  color: #5d8b34;
+  /* Donkergroene kleur */
 }
 
 /* Zorg ervoor dat de link op verschillende staten de juiste kleur heeft */
 .voordeel-container a:link {
-  color: #5d8b34; /* Donkergroen voor niet-bezochte links */
+  color: #5d8b34;
+  /* Donkergroen voor niet-bezochte links */
 }
 
 .voordeel-container a:visited {
-  color: #8bc34a; 
+  color: #8bc34a;
 }
 
 .voordeel-container a:hover {
-  color: #8bc34a; /* Lichter groen bij hover */
+  color: #8bc34a;
+  /* Lichter groen bij hover */
 }
 
 
@@ -842,23 +944,27 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 .HealthySeas a {
   display: inline-block;
-  text-decoration: underline; /* Onderstreep de link */
+  text-decoration: underline;
+  /* Onderstreep de link */
   border-radius: 4px;
   font-size: 1rem;
-  color: #5d8b34; /* Donkergroene kleur */
+  color: #5d8b34;
+  /* Donkergroene kleur */
 }
 
 /* Zorg ervoor dat de link op verschillende staten de juiste kleur heeft */
 .HealthySeas a:link {
-  color: #5d8b34; /* Donkergroen voor niet-bezochte links */
+  color: #5d8b34;
+  /* Donkergroen voor niet-bezochte links */
 }
 
 .HealthySeas a:visited {
-  color: #8bc34a; 
+  color: #8bc34a;
 }
 
 .HealthySeas a:hover {
-  color: #8bc34a; /* Lichter groen bij hover */
+  color: #8bc34a;
+  /* Lichter groen bij hover */
 }
 
 
@@ -871,8 +977,8 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   background: #f6f5f2;
   padding: 20px;
-  margin-top: 30px;  
-  margin-bottom: 30px;  
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 8px;
   max-width: 400px;
 }
@@ -902,110 +1008,114 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 /* footer */
 /**********************/
 
-footer{
+footer {
   text-align: center;
   background: #f5f3eb;
   padding: 20px;
-  border-radius: 8px;
   max-width: 400px;
 }
 
-footer p{
-font-size:12px;
+footer p {
+  font-size: 12px;
 }
 
 
 /* deelknoppen */
 .social-footer {
-display: flex;
-gap: 15px;
-align-items: center;
-justify-content: center;
-margin-top:40px;
-margin-bottom:40px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
 }
 
 .social-footer .icon {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-border: 1px solid #e2e0ce;
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-transition: transform 0.3s ease, background-color 0.3s ease;
-cursor: pointer;
-position: relative;
-overflow: hidden;
-outline: none; /* Geen focusrand bij klikken */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e2e0ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  /* Geen focusrand bij klikken */
 }
 
 
 .social-footer .icon img {
-width: 90%; /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
-height: 90%; /* Houdt dezelfde verhouding als de breedte */
-object-fit: contain; /* Houdt de afbeelding netjes binnen de cirkel */
-border-radius: 50%; /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
+  width: 90%;
+  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
+  height: 90%;
+  /* Houdt dezelfde verhouding als de breedte */
+  object-fit: contain;
+  /* Houdt de afbeelding netjes binnen de cirkel */
+  border-radius: 50%;
+  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
 }
 
 
 /* over ons */
-.over-ons-footer{
-text-align: left;
-padding-left: 15px;
-padding-right: 15px;
-border-radius: 8px;
-max-width: 400px;
+.over-ons-footer {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  max-width: 400px;
 }
 
 .over-ons-footer h1 {
-font-size: 12px;
-color: #333;
-margin: 10px 0;
+  font-size: 12px;
+  color: #333;
+  margin: 10px 0;
 }
 
 .over-ons-footer p {
-font-size: 13px;
-color: #000;
-margin-bottom: 20px;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 
 
 /* betalen */
-.betalen{
-text-align: left;
-padding-left: 15px;
-padding-right: 15px;
-max-width: 400px;
-border-bottom: 1px solid #ddd;
-width: 95%;
-padding: 10px;
-margin: 0 auto;
-overflow: hidden;
+.betalen {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 400px;
+  border-bottom: 1px solid #ddd;
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .betalen h1 {
-font-size: 12px;
-color: #333;
-margin: 10px 0;
+  font-size: 12px;
+  color: #333;
+  margin: 10px 0;
 }
 
 .betalen p {
-font-size: 13px;
-color: #000;
-margin-bottom: 20px;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .betalen img:nth-of-type(1) {
-width: 40px;
-margin-right: 20px;
+  width: 40px;
+  margin-right: 20px;
 }
 
 .betalen img:nth-of-type(2) {
-width: 55px;
+  width: 55px;
 }
 
 /* sponsoren */
@@ -1019,15 +1129,20 @@ width: 55px;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Zorgt dat afbeeldingen en tekst apart worden behandeld */
+  flex-direction: column;
+  /* Zorgt dat afbeeldingen en tekst apart worden behandeld */
   align-items: stretch;
 }
 
 .sponsoren-images {
-  display: flex; /* Zet de afbeeldingen naast elkaar */
-  justify-content: space-between; /* Verdeel de ruimte gelijkmatig */
-  align-items: center; /* Zorg dat ze gecentreerd zijn op dezelfde hoogte */
-  margin-bottom: 20px; /* Ruimte tussen afbeeldingen en tekst */
+  display: flex;
+  /* Zet de afbeeldingen naast elkaar */
+  justify-content: space-between;
+  /* Verdeel de ruimte gelijkmatig */
+  align-items: center;
+  /* Zorg dat ze gecentreerd zijn op dezelfde hoogte */
+  margin-bottom: 20px;
+  /* Ruimte tussen afbeeldingen en tekst */
 }
 
 .sponsoren-images img {
@@ -1056,30 +1171,496 @@ width: 55px;
 
 /* footerLogo */
 .footerLogo {
-display: flex;
-align-items: top; 
-justify-content: space-between; 
-padding: 15px;
-border-radius: 8px;
-max-width: 400px;
-width: 95%;
-margin: 0 auto;
-overflow: hidden;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .footerLogo img {
-width: 50px; /* Breedte van de afbeelding */
-height: 80.2px; /* Hoogte van de afbeelding */
-margin-right: 15px; /* Ruimte tussen afbeelding en tekst */
+  width: 50px;
+  /* Breedte van de afbeelding */
+  height: 80.2px;
+  /* Hoogte van de afbeelding */
+  margin-right: 15px;
+  /* Ruimte tussen afbeelding en tekst */
 }
 
 .footerLogo h1 {
-margin: 0; /* Verwijder extra marges */
-margin-left: auto; /* Duwt de `h1` naar de rechterkant */
-text-align: right; /* Zorgt dat de tekst rechts uitgelijnd is */
-font-size: 20px;
-color: #000;
-line-height: 1; /* Zorgt voor nette uitlijning */
+  margin: 0;
+  /* Verwijder extra marges */
+  margin-left: auto;
+  /* Duwt de `h1` naar de rechterkant */
+  text-align: right;
+  /* Zorgt dat de tekst rechts uitgelijnd is */
+  font-size: 20px;
+  color: #000;
+  line-height: 1;
+  /* Zorgt voor nette uitlijning */
 }
 
 
+
+
+
+
+
+
+
+/***************************/
+/***************************/
+/******** pagina 2  ********/
+/***************************/
+/***************************/
+
+/**********************/
+/* header */
+/**********************/
+
+
+/*.main2 {
+  background-image: url(../images2/inno-header.png);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: 230%; 
+  height: 450px; 
+}*/
+
+
+.Head-p2 {
+  text-align: left;
+  padding: 20px;
+  max-width: 400px;
+  /*margin-top: 10em;*/
+}
+
+.Head-p2 h1 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.Head-p2 p {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .55px;
+  font-weight: 300;
+}
+
+
+/****************/
+/* share buttons */
+/****************/
+/* Container voor sociale media */
+.social-share2 {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  padding-right: 20px;
+  right: 0;
+  /* Zorgt dat ze aan de rechterkant van de pagina staan */
+}
+
+/* Algemene styling voor de iconen */
+.social-share2 .icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #eae7d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  /* Geen randen rond de iconen */
+  outline: none;
+  /* Geen focusrand bij klikken */
+}
+
+
+/* Styling voor afbeeldingen binnen iconen */
+.social-share2 .icon img {
+  width: 90%;
+  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
+  height: 90%;
+  /* Houdt dezelfde verhouding als de breedte */
+  object-fit: contain;
+  /* Houdt de afbeelding netjes binnen de cirkel */
+  border-radius: 50%;
+  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
+}
+
+
+
+
+/****************/
+/* be one with nature */
+/****************/
+.BeOneWithNature {
+  text-align: left;
+  padding: 20px;
+  max-width: 400px;
+  margin-top: 2em;
+}
+
+.BeOneWithNature h1 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.BeOneWithNature p {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .55px;
+  font-weight: 300;
+}
+
+
+/**********************/
+/* wat doet wwf */
+/**********************/
+.WatDoenZe h1 {
+  text-align: center;
+}
+
+/* Algemene styling voor links */
+
+.WatDoenZe {
+  max-width: 95%;
+  margin: 20px auto;
+}
+
+.WatDoenZe h1 {
+  text-align: center;
+}
+
+/* Algemene styling voor links */
+.WatDoenZe a {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  /* Breedte gelijk aan .product-info2 */
+  height: auto;
+  /* Hoogte wordt automatisch ingesteld */
+  aspect-ratio: 690 / 310;
+  /* Verhouding van de originele afbeeldingen */
+  margin: 0;
+  /* Geen marge tussen de blokken */
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  /* Ruimte voor de tekst aan de onderkant */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Positioneer de tekst in de rechterbenedenhoek */
+.WatDoenZe .footer-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 8px;
+  /* Kleinere tekstgrootte */
+  color: white;
+}
+
+/* Zorg dat er geen ruimte tussen de blokken ontstaat */
+.WatDoenZe div {
+  display: flex;
+  flex-direction: column;
+  /* Stapelexemplaar van boven naar beneden */
+  gap: 0;
+  /* Geen ruimte tussen de elementen */
+}
+
+/* Specifieke styling voor de thema's */
+.themas {
+  background-image: url("../images2/rufiji-delta.png");
+}
+
+/* Specifieke styling voor de gebieden */
+.gebieden {
+  background-image: url("../images2/giraffe.png");
+}
+
+/* Specifieke styling voor hoe we werken */
+.werkwijze {
+  background-image: url("../images2/duiker-net.png");
+}
+
+
+
+
+/*****************************/
+/* wildlife expert contairen */
+/*****************************/
+.expert {
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  max-width: 400px;
+  background-color: #f6f5f2;
+}
+
+.expert img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.expert h1 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+  margin-bottom: 35px;
+
+}
+
+/*.expert p {
+  font-size: 1rem;
+  font-family: 'Rubic', sans-serif;
+  color: #555;
+  margin-bottom: 20px;
+}
+*/
+
+.quote-name {
+  font-size: 15px;
+  line-height: 18px;
+  color: #35352a;
+  margin-bottom: 6px;
+}
+
+.quote-function {
+  font-size: 11px;
+  line-height: 13px;
+  color: #9d9d95;
+  text-transform: uppercase;
+  letter-spacing: 1.22px;
+  margin-bottom: 29px;
+}
+
+/* Knop styling */
+.blogs {
+  display: inline-block;
+  border: 1px solid #e2e0ce;
+  color: #78786f;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 29px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.blogs:hover {
+  background: #fff;
+
+}
+
+
+
+/******************/
+/* meer over wwf */
+/*****************/
+.MeerInfo h1 {
+  text-align: center;
+}
+
+/* Algemene styling voor links */
+.MeerInfo a {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 285px;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  /* Ruimte voor de tekst aan de onderkant */
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Styling voor de hoofdtekst van de links */
+.MeerInfo a .link-text {
+  font-size: 30px;
+  line-height: 36px;
+  height: 108px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Positioneer de footer-tekst */
+.MeerInfo .footer-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  display: block;
+  font-size: 11px;
+  line-height: 14px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+/* Zorg dat er geen ruimte tussen de blokken ontstaat */
+.MeerInfo div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Specifieke styling voor de thema's */
+.Over {
+  background-image: url("../images2/walvis.png");
+}
+
+.Geschiedenis {
+  background-image: url("../images2/panda.png");
+}
+
+.Projecten {
+  background-image: url("../images2/mais-boer.png");
+}
+
+
+
+
+
+/******************/
+/* resultaten en updates */
+/*****************/
+.ResultatenEnUpdates h1 {
+  text-align: center;
+}
+
+/* Algemene styling voor links */
+.ResultatenEnUpdates {
+  max-width: 95%;
+  margin: 20px auto;
+}
+
+
+/* bonenatlas */
+.Bonenatlas {
+  text-align: left bottom;
+  padding: 20px;
+  background-color: #f80000;
+  max-width: 100%;
+  height: 244px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+  background-image: url("https://www.wwf.nl/globalassets/afbeeldingen/onze-focus/food/bonen-in-hand.jpg?format=webp&mode=crop&autorotate=true&upscale=False&height=490&width=800");
+}
+
+.Bonenatlas h2 {
+  color: #ffffff;
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.Bonenatlas a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.04px;
+}
+
+/**********************/
+/* nederlandsVoedselsysteem */
+/**********************/
+.ContentContainer {
+  display: flex;
+  align-items: flex-start;
+  /* Zorgt ervoor dat ze bovenaan uitgelijnd zijn */
+  justify-content: flex-start;
+  gap: 0;
+  /* Geen ruimte tussen de afbeelding en de div */
+  margin-bottom: 20px;
+  /* Ruimte tussen de blokken */
+  width: 100%;
+}
+
+/* Styling voor de afbeelding */
+.ContentContainer img {
+  width: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styling voor de .nederlandsVoedselsysteem div */
+.nederlandsVoedselsysteem {
+  background-color: #f6f5f2;
+  overflow: hidden;
+  padding: 15px 15px 35px;
+  width: 50%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nederlandsVoedselsysteem h2 {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 15px;
+
+}
+
+.nederlandsVoedselsysteem a {
+  display: inline-block;
+  text-decoration: underline;
+  color: #5d8b34;
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.04px;
+}
