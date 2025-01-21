@@ -22,12 +22,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
   #### Je focus:
   surface:
-  - Video/Geluid !!!!!
-  - Prefers-reduced-motion
-  - Animaties (loading, nadruk, feedback, branding...) !!!!!
-  - SVG (icons) stylen en animeren !!!!!
-  - Meer complete micro-interacties !!!!!
-  - Toegankelijkheid++
+  - Video/Geluid
+  - Animaties (loading, nadruk, feedback, branding...) 
+  - SVG (icons) stylen en animeren 
+  - Meer complete micro-interacties 
   - has()
   
 </details>

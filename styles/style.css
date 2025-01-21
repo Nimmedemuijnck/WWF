@@ -1140,6 +1140,7 @@ footer p {
 
 iframe {
   padding: 0px 20px 20px 20px;
+  border: none;
 }
 
 /****************/
@@ -1384,24 +1385,29 @@ iframe {
   padding: 5px;
 }
 
-.MeerInfo div {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
 .Over {
   background-image: url("../images2/walvis.png");
+}
+
+.Over:has(> .footer-text) {
+  background-size: cover;
 }
 
 .Geschiedenis {
   background-image: url("../images2/panda.png");
 }
 
+.Geschiedenis:has(> .footer-text) {
+  background-size: cover;
+}
+
 .Projecten {
   background-image: url("../images2/mais-boer.png");
 }
 
+.Projecten:has(> .footer-text) {
+  background-size: cover;
+}
 
 /******************/
 /* resultaten en updates */
@@ -1416,7 +1422,7 @@ iframe {
 }
 
 .Bonenatlas {
-  text-align: flex-start;
+  text-align: left;
   padding: 20px;
   background-color: var(--wit);
   max-width: 100%;
