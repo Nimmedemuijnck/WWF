@@ -146,7 +146,6 @@
       </div>
     </div>
 
-
     <!-- Product info block -->
     <section class="product-section">
       <div class="product-header">
@@ -163,7 +162,23 @@
         </select>
       </div>
 
-      <button class="add-to-cart">In winkelwagen ></button>
+      <div class="button-wrapper">
+        <button class="add-to-cart">In winkelwagen ></button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+      <script>document.getElementsByClassName("add-to-cart")[0].addEventListener("click", () => {
+          let canvas = document.createElement("canvas");
+          canvas.width = 300;
+          canvas.height = 300;
+          let container = document.getElementsByClassName("button-wrapper")[0];
+          container.appendChild(canvas);
+
+          let add_to_cart = confetti.create(canvas);
+          add_to_cart().then(() => container.removeChild(canvas));
+        })
+
+      </script>
     </section>
 
 
@@ -242,14 +257,14 @@
 
 
 
-    <!-- rode lijst -->
     <div class="RodeLijst">
-      <img src="https://www.wwf.nl/Content/dist/img/logo-footer.svg" alt="Logo-WWF-Panda">
+      <img class="spin" src="https://www.wwf.nl/Content/dist/img/logo-footer.svg" alt="Logo-WWF-Panda">
       <p>De IUCN Rode Lijst geeft aan hoe het er voor staat met dier- en plantsoorten. Elk dier of plant op de lijst is
         ingedeeld op een schaal van 7 statussen. Hoe hoger op de lijst, hoe belangrijker het is om samen met WWF dit
         dier of deze plant te beschermen. Voor het dier dat centraal staat bij dit product geldt de status:</p>
       <h2>Kwetsbare dier- of plantensoort (VU, vulnerable, 3)</h2>
     </div>
+
 
 
   </main>
@@ -283,7 +298,8 @@
         <h2>OVER ONS</h2>
         <p>WWF-NL is onderdeel van het internationale WWF. We zijn op een missie: de wereld 'Nature Positive' maken. Van
           natuurverlies naar natuurwinst, zo snel mogelijk. Want natuur is van levensbelang voor dier en mens. Maar de
-          wereld veranderen kan niemand alleen. Daarom werken we samen met lokale partners, mensen, bedrijven en overheden
+          wereld veranderen kan niemand alleen. Daarom werken we samen met lokale partners, mensen, bedrijven en
+          overheden
           wereldwijd.</p>
       </section>
 
@@ -297,8 +313,10 @@
 
     <section class="sponsoren">
       <div class="sponsoren-images">
-        <img src="https://www.wwf.nl/globalassets/afbeeldingen/logos-en-iconen/partners-footer/npl_logo_2022.png" alt="">
-        <img src="https://www.wwf.nl/globalassets/afbeeldingen/logos-en-iconen/partners-footer/wwf-logo-anbi.png" alt="">
+        <img src="https://www.wwf.nl/globalassets/afbeeldingen/logos-en-iconen/partners-footer/npl_logo_2022.png"
+          alt="">
+        <img src="https://www.wwf.nl/globalassets/afbeeldingen/logos-en-iconen/partners-footer/wwf-logo-anbi.png"
+          alt="">
         <img
           src="https://www.wwf.nl/globalassets/afbeeldingen/logos-en-iconen/partners-footer/logo_erkend_goed_doel_rgb.png"
           alt="">

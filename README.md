@@ -21,8 +21,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Je startniveau:
   Blauw
   #### Je focus:
-  surface
- 
+  surface:
+  - Video/Geluid
+  - Lettergrootte kunnen instellen
+  - Animaties (loading, nadruk, feedback, branding...)
+  - SVG (icons) stylen en animeren
+  - Meer complete micro-interacties
+  - has()
+  
 </details>
 
 
@@ -283,6 +289,7 @@ Color Contrast
   6. https://www.wwf.nl/webshop/kleding-accessoires/schoenen-en-sokken/retro-sportsokken-zwart-met-panda-logo-maat-35-40
   7. Opdrachten in de les
   8. https://www.youtube.com/watch?v=HywNyC1XDFg
+  9. https://www.youtube.com/watch?v=hq_tKbSzAiY
 
 
 
