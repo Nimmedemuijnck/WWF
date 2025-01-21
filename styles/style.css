@@ -16,37 +16,37 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --zwart: #111; 
-  --wit: #ffffff; 
-  --licht-wit: #FAFAFA; 
-  --donker-zwart: #333; 
-  --donker-groen: #368714; 
-  --licht-groen: #3cb046; 
-  --licht-grijs: #ddd; 
-  --zacht-wit: #e2e0ce; 
-  --bijna-wit: #f6f5f2; 
-  --warm-wit: #f5f3eb; 
-  --middel-grijs: #78786f; 
+  --zwart: #111;
+  --wit: #ffffff;
+  --licht-wit: #FAFAFA;
+  --donker-zwart: #333;
+  --donker-groen: #368714;
+  --licht-groen: #3cb046;
+  --licht-grijs: #ddd;
+  --zacht-wit: #e2e0ce;
+  --bijna-wit: #f6f5f2;
+  --warm-wit: #f5f3eb;
+  --middel-grijs: #78786f;
   --licht-middel-grijs: #9d9d95;
   --zand-wit: #eae7d9;
-  
+
 }
 
 
-@media (prefers-color-scheme: dark){
-  :root{
-    --zwart: #E0E0E0; 
-    --wit: #FFFFFF; 
-    --licht-wit: #1C1C1C; 
-    --donker-zwart: #B0B0B0; 
-    --donker-groen: #6FBD53; 
-    --licht-groen: #89D982; 
-    --licht-grijs: #444; 
-    --zacht-wit: #2A2A2A; 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zwart: #E0E0E0;
+    --wit: #FFFFFF;
+    --licht-wit: #1C1C1C;
+    --donker-zwart: #B0B0B0;
+    --donker-groen: #6FBD53;
+    --licht-groen: #89D982;
+    --licht-grijs: #444;
+    --zacht-wit: #2A2A2A;
     --bijna-wit: #f6f5f2;
-    --warm-wit: #252525; 
-    --middel-grijs: #B3B3B3; 
-    --licht-middel-grijs: #CCCCCC; 
+    --warm-wit: #252525;
+    --middel-grijs: #B3B3B3;
+    --licht-middel-grijs: #CCCCCC;
     --zand-wit: #3A3A3A;
 
 
@@ -117,7 +117,7 @@ https://www.youtube.com/watch?v=flItyHiDm7E&t=18s
 
 header {
   background-color: rgba(255, 255, 255, 0);
-  box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
 }
 
 main {
@@ -900,13 +900,15 @@ li[aria-label="dropdown"] {
 
 /* Hover-effect voor de animatie */
 .RodeLijst img:hover {
-  animation: spin 4s linear 1 forwards; /* Start animatie bij hover en laat hem afspelen */
+  animation: spin 4s linear 1 forwards;
+  /* Start animatie bij hover en laat hem afspelen */
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
