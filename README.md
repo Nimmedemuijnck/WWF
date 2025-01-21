@@ -282,6 +282,7 @@ Color Contrast
   5. https://www.wwf.nl/wat-we-doen
   6. https://www.wwf.nl/webshop/kleding-accessoires/schoenen-en-sokken/retro-sportsokken-zwart-met-panda-logo-maat-35-40
   7. Opdrachten in de les
+  8. https://www.youtube.com/watch?v=HywNyC1XDFg
 
 
 
