@@ -199,11 +199,49 @@ Color Contrast
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+Lijst met je bevindingen die in de test naar voren kwamen:
 
+Content
+- Website maakt duidelijk wat links zijn door middel van een streep onder de tekst en een pijltje ernaast. Buttons zijn verder ook duidelijk doordat ze rond zijn afgewerkt.
+
+Global Code
+
+Keyboard
+- Met tab kan je elementen selecteren.
+- De website selecteerd op logische volgorde.
+- Je kan bijna alles selecteren. Alleen de inhoud van de dropdowns pakt hij niet.
+
+Mobile & Touch
+- Website is te gebruiken op alle telefoon formaten, zonder dat de plaatjes en knoppen raar vervormen.
+- Scrollen naar links of rechts is uitgeschakeld, alleen toegestaan op plekken waar het nodig is zoals slideshows.
+
+Headings
+- Elk stuk nieuwe content wordt geintroduceerd door een Heading.
+- Er worden geen meerdere h1's op een pagina gebruikt.
+- Na elk stukje content is een groot plaatje geplaatst, waar je doorheen moet scrollen. Dit is een handig trucje om geen content te skippen.
+
+Lists
+- Een collectie van items staat binnen een list als content.
+
+Images
+- Alle plaatjes hebben een goeie ALT description.
+
+Media
+- Er is 1 video. Een commercial van WWF. deze is op de site te bekijken.
+
+Controls
+
+Appearance
+- Website heeft een dark-mode.
+- Website ziet er niet meer goed uit met 200% text size increase.
+- De kleuren zijn simpel, maar door het groen is het wel duidelijk dat het over iets met natuur gaat.
+
+Animation
+- Er zijn 2 aimaties. Als je op de 'In winkelwagen' knop drukt, verschijnt er confetti. Zo weet de gebruiker zeker dat het product is toegevoegd aan de winkelwagen. Als je in het stukje over de Rode lijst opp het WWF logo klikt, draait het logo een rondje. Dit is een kleine Easteregg voor de gebruiker. 
+
+Color Contrast
+- De site heeft een witte achtergrond met zwarte text, dus het contrast is wel goed.
 </details>
-
-
 
 
 
