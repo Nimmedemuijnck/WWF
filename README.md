@@ -24,9 +24,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   surface:
   - Video/Geluid
   - Lettergrootte kunnen instellen
-  - Animaties (loading, nadruk, feedback, branding...)
-  - SVG (icons) stylen en animeren
+  - Prefers-reduced-motion
+  - Animaties (loading, nadruk, feedback, branding...) !!!!!
+  - SVG (icons) stylen en animeren !!!!!
   - Meer complete micro-interacties
+  - Interactie met het toetsenbord++ (shortcuts, escape…)
+  - Custom properties++ (voor meer dan kleur, aanpassen met JS…)
+  - DOM manipulatie
+  - Progressive enhancement
+  - Toegankelijkheid++
   - has()
   
 </details>
