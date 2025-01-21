@@ -899,7 +899,7 @@ li[aria-label="dropdown"] {
   margin-bottom: 15px;
 }
 
-.voordeel-container h1 {
+.voordeel-container h2 {
   color: var(--donker-zwart);
   margin: 10px 0;
   font-size: 40px;
@@ -960,7 +960,7 @@ li[aria-label="dropdown"] {
   border-radius: 8px;
 }
 
-.HealthySeas h1 {
+.HealthySeas h2 {
   font-size: 1.5rem;
   color: var(--donker-zwart);
   margin: 10px 0;
@@ -1018,7 +1018,7 @@ li[aria-label="dropdown"] {
   border-radius: 8px;
 }
 
-.RodeLijst h1 {
+.RodeLijst h2 {
   font-size: 30px;
   color: var(--donker-zwart);
   margin: 10px 0;
@@ -1100,7 +1100,7 @@ footer p {
   max-width: 100%;
 }
 
-.over-ons-footer h1 {
+.over-ons-footer h2 {
   font-size: 12px;
   color: var(--donker-zwart);
   margin: 10px 0;
@@ -1127,7 +1127,7 @@ footer p {
   overflow: hidden;
 }
 
-.betalen h1 {
+.betalen h2 {
   font-size: 12px;
   color: var(--donker-zwart);
   margin: 10px 0;
@@ -1221,7 +1221,7 @@ footer p {
   /* Ruimte tussen afbeelding en tekst */
 }
 
-.footerLogo h1 {
+.footerLogo h2 {
   margin: 0;
   /* Verwijder extra marges */
   margin-left: auto;
@@ -1344,7 +1344,7 @@ footer p {
   margin-top: 2em;
 }
 
-.BeOneWithNature h1 {
+.BeOneWithNature h2 {
   font-size: 1.5rem;
   color: var(--zwart);
   margin: 10px 0;
@@ -1363,7 +1363,7 @@ footer p {
 /**********************/
 /* wat doet wwf */
 /**********************/
-.WatDoenZe h1 {
+.WatDoenZe h2 {
   text-align: center;
 }
 
@@ -1374,7 +1374,7 @@ footer p {
   margin: 20px auto;
 }
 
-.WatDoenZe h1 {
+.WatDoenZe h2 {
   text-align: center;
 }
 
@@ -1462,7 +1462,7 @@ footer p {
   margin-bottom: 15px;
 }
 
-.expert h1 {
+.expert h2 {
   font-size: 36px;
   line-height: 42px;
   color: var(--zwart);
@@ -1522,7 +1522,7 @@ footer p {
 /******************/
 /* meer over wwf */
 /*****************/
-.MeerInfo h1 {
+.MeerInfo h2 {
   text-align: center;
   color: var(--zwart);
 }
@@ -1597,7 +1597,7 @@ footer p {
 /******************/
 /* resultaten en updates */
 /*****************/
-.ResultatenEnUpdates h1 {
+.ResultatenEnUpdates h2 {
   text-align: center;
 }
 
