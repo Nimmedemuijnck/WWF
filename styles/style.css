@@ -1138,6 +1138,9 @@ footer p {
   font-weight: 300;
 }
 
+iframe {
+  padding: 0px 20px 20px 20px;
+}
 
 /****************/
 /* share buttons */
@@ -1154,7 +1157,7 @@ footer p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: var(--bijna-wit);
+  background-color: var(--zand-wit);
   display: flex;
   align-items: center;
   justify-content: center;

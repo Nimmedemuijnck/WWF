@@ -23,14 +23,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Je focus:
   surface:
   - Video/Geluid !!!!!
-  - Lettergrootte kunnen instellen
   - Prefers-reduced-motion
   - Animaties (loading, nadruk, feedback, branding...) !!!!!
   - SVG (icons) stylen en animeren !!!!!
   - Meer complete micro-interacties !!!!!
-  - Interactie met het toetsenbord++ (shortcuts, escape…)
-  - DOM manipulatie
-  - Progressive enhancement
   - Toegankelijkheid++
   - has()
   
