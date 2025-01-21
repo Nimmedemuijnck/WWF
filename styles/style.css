@@ -16,18 +16,18 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-  --zwart: #111; /* Donker zwart */
-  --wit: #ffffff; /* Helder wit */
-  --licht-wit: #FAFAFA; /* Zeer licht wit, voor achtergrond */
-  --donker-zwart: #333; /* Donker zwart, voor knoppen of tekst */
-  --donker-groen: #368714; /* Donkergroen voor accenten en details */
-  --licht-groen: #3cb046; /* Lichter groen, voor actie-elementen */
-  --licht-grijs: #ddd; /* Lichtgrijs voor randen of subtiele lijnen */
-  --zacht-wit: #e2e0ce; /* Zacht wit met een beige tint */
-  --bijna-wit: #f6f5f2; /* Bijna wit, voor informatieve blokken */
-  --warm-wit: #f5f3eb; /* Warm wit, ideaal voor footers */
-  --middel-grijs: #78786f; /* Middengrijs voor teksten of subtiele elementen */
-  --licht-middel-grijs: #9d9d95; /* Lichter middengrijs voor minder prominente details */
+  --zwart: #111; 
+  --wit: #ffffff; 
+  --licht-wit: #FAFAFA; 
+  --donker-zwart: #333; 
+  --donker-groen: #368714; 
+  --licht-groen: #3cb046; 
+  --licht-grijs: #ddd; 
+  --zacht-wit: #e2e0ce; 
+  --bijna-wit: #f6f5f2; 
+  --warm-wit: #f5f3eb; 
+  --middel-grijs: #78786f; 
+  --licht-middel-grijs: #9d9d95;
   --zand-wit: #eae7d9;
   
 }
@@ -35,19 +35,19 @@
 
 @media (prefers-color-scheme: dark){
   :root{
-    --zwart: #E0E0E0; /* Primaire lichtgrijze tekstkleur */
-    --wit: #FFFFFF; /* Helder wit, voor contrasterende teksten */
-    --licht-wit: #1C1C1C; /* Donkere achtergrondkleur */
-    --donker-zwart: #B0B0B0; /* Lichter grijs, voor subtiele tekst zoals knoppen of labels */
-    --donker-groen: #6FBD53; /* Heldere donkergroene tint voor links en accenten */
-    --licht-groen: #89D982; /* Frisse, lichte groentint voor actie-elementen */
-    --licht-grijs: #444; /* Donkergrijs voor randen en lijnen */
-    --zacht-wit: #2A2A2A; /* Warme donkere tint voor zachte randen */
-    --bijna-wit: #f6f5f2; /* Donkergrijs voor informatieblokken */
-    --warm-wit: #252525; /* Diepgrijs met een warme ondertoon voor footers */
-    --middel-grijs: #B3B3B3; /* Lichtere grijstint voor subtiele teksten */
-    --licht-middel-grijs: #CCCCCC; /* Nog lichter grijs voor bronnen en details */
-    --zand-wit: #3A3A3A; /* Neutrale donkergrijze tint met een warme gloed */
+    --zwart: #E0E0E0; 
+    --wit: #FFFFFF; 
+    --licht-wit: #1C1C1C; 
+    --donker-zwart: #B0B0B0; 
+    --donker-groen: #6FBD53; 
+    --licht-groen: #89D982; 
+    --licht-grijs: #444; 
+    --zacht-wit: #2A2A2A; 
+    --bijna-wit: #f6f5f2;
+    --warm-wit: #252525; 
+    --middel-grijs: #B3B3B3; 
+    --licht-middel-grijs: #CCCCCC; 
+    --zand-wit: #3A3A3A;
 
 
 
@@ -152,7 +152,6 @@ body {
 
 .nav-menu {
   display: flex;
-  /*justify-content: space-between;*/
   align-items: flex-start;
   padding-left: 20px;
   gap: 60px;
@@ -241,14 +240,12 @@ body {
   .nav-menu {
     position: absolute;
     left: -100%;
-    /* Begin van de pagina */
     top: 90px;
     gap: 0;
     flex-direction: column;
     background-color: var(--wit);
     width: 100%;
     height: 100%;
-    /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
     text-align: left;
     transition: 0.3s;
   }
@@ -256,7 +253,6 @@ body {
   /* Actief menu van links schuiven */
   .nav-menu.active {
     left: 0;
-    /* Het schuift in de pagina */
   }
 
   /* Tweede menu, dat van rechts schuift */
@@ -270,17 +266,14 @@ body {
     background-color: var(--wit);
     width: 100%;
     height: 100%;
-    /* Zorgt ervoor dat het menu de volledige hoogte van de pagina bedekt */
     text-align: left;
     padding-left: 20px;
     transition: 0.3s ease-in-out;
-    /* Zorg ervoor dat de overgang soepel is */
   }
 
   /* Het tweede menu schuift van rechts naar binnen */
   .nav-item:nth-of-type(1) ul.active {
     right: 0;
-    /* Het schuift van rechts naar binnen */
   }
 
 
@@ -317,11 +310,8 @@ body {
   align-items: center;
   text-decoration: none;
   color: var(--color-backbutton);
-  /* Donkergrijze tekstkleur */
   font-size: 16px;
-  /* Grootte van de tekst */
   font-weight: 500;
-  /* Vetgedrukte tekst */
   padding: 10px 15px;
 }
 
@@ -329,32 +319,26 @@ body {
 /* Slide show */
 /****************/
 .caroCarrousel {
-  /* basis waarden die door de hele carrousel gebruikt worden */
-  /* kun je zelf aanpassen */
   --caroCarrouselMainColor: #333;
   --caroCarrouselAccentColor: #1b75b3;
   --caroCarrouselShadeColor: #ddd9;
 
   position: relative;
   overflow: hidden;
-  /* om de linkbuttons te verbergen */
   outline: none;
 
 
 
   max-width: 98%;
-  /* Beperkt de breedte tot 80% van de pagina */
   margin: 15px auto;
-  /* Voegt ruimte toe rondom en centreert de slideshow */
   margin-bottom: 10px;
   border: 2px;
   padding: 10px;
-  /* Optioneel: binnenruimte */
 
 }
 
 /* dark mode */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   .caroCarrousel {
     --caroCarrouselMainColor: #ccc;
     --caroCarrouselShadeColor: #4449;
@@ -369,29 +353,16 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
-
-  /* handmatig scrollen is mogelijk */
   overflow: hidden;
-
-  /* snappen als er gescrolled wordt - andere helft bij li */
   scroll-snap-type: inline mandatory;
-
-  /* smooth scrollen */
   scroll-behavior: smooth;
-
-  /* scrollbar zoveel mogelijk verbergen */
   -webkit-overflow-scrolling: touch;
-  /* voor iOS*/
   -ms-overflow-style: none;
-  /* voor IE */
   scrollbar-width: none;
-  /* voor firefox */
 }
 
 .caroCarrousel>ul::-webkit-scrollbar {
-  /* scrollbar zoveel mogelijk verbergen */
   display: none;
-  /* voor chrome, safari en edge*/
 }
 
 
@@ -400,15 +371,11 @@ body {
 .caroCarrousel>ul li {
   flex-basis: 100%;
   flex-shrink: 0;
-  /* snappen als er gescrolled wordt - andere helft bij ul */
   scroll-snap-align: center;
 }
 
-
 /**********************************/
 /* de carrousel elementen content */
-
-/* de stijlen voor jouw content hier */
 .caroCarrousel>ul li>img {
   display: block;
   width: 100%;
@@ -417,12 +384,9 @@ body {
 
 /****************/
 /* DE BOLLETJES */
-/****************/
-
 .caroCarrousel nav ul {
   left: 50%;
   bottom: -2px;
-  /* Zet de bolletjes iets lager, zodat ze niet uit de container vallen */
   margin: 0;
   padding: 10px;
   list-style: none;
@@ -430,51 +394,37 @@ body {
   justify-content: center;
   gap: 0.5em;
   z-index: 10;
-  /* Zorg ervoor dat de bolletjes boven de carrousel liggen */
 }
 
 .caroCarrousel>nav li {
   flex-basis: 0.7em;
-  /* nog kleinere bolletjes */
   aspect-ratio: 1/1;
 }
 
 .caroCarrousel>nav a {
   display: block;
   width: 0.7em;
-  /* maak de bolletjes kleiner */
   height: 0.7em;
-  /* maak de bolletjes kleiner */
   text-decoration: none;
   color: var(--wit);
-  /* kleur van de bolletjes */
   background-color: var(--bijna-wit);
-  /* kleur van de bolletjes */
   border-radius: 50%;
-  /* maakt de bolletjes rond */
   outline: none;
   transition: background-color 0.3s, transform 0.3s;
-  /* overgang voor hover en active state */
 }
 
 .caroCarrousel>nav a:hover,
 .caroCarrousel>nav a:focus {
   background-color: #368714;
-  /* accentkleur bij hover */
   transform: scale(1.2);
-  /* vergroting bij hover */
 }
 
 .caroCarrousel>nav a.current {
   background-color: var(--donker-groen);
-  /* de kleur van het actieve bolletje */
 }
-
-
 
 /****************************/
 /* PREV EN NEXT LINKBUTTONS */
-/****************************/
 .caroCarrousel>a {
   position: absolute;
   width: 2.8em;
@@ -488,7 +438,6 @@ body {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  /* Maakt het een cirkel */
   transition: background-color 0.3s;
 }
 
@@ -500,25 +449,22 @@ body {
   right: 1em;
 }
 
-
 .caroCarrousel:hover>a.previous,
 .caroCarrousel:focus-within>a.previous {
   left: 0.5em;
-  /* Schuift naar binnen als de carrousel wordt gehighlighted */
 }
 
 .caroCarrousel:hover>a.next,
 .caroCarrousel:focus-within>a.next {
   right: 0.5em;
-  /* Schuift naar binnen als de carrousel wordt gehighlighted */
 }
 
 
 
 
-/***********************/
+/**************/
 /* Dropdowns */
-
+/*************/
 .dropdown-container {
   border-bottom: 1px solid var(--licht-grijs);
   width: 98%;
@@ -589,38 +535,26 @@ body {
 }
 
 
-
-
-
-
-
-
 /**********************/
 /* Product info block */
 /**********************/
-/* Algemene styling voor de sectie */
 .product-section {
   background-color: var(--licht-wit);
   border-radius: 10px;
   padding: 20px;
   max-width: 95%;
-  /* Beperkt de breedte */
   margin: 20px auto;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtiele schaduw */
   text-align: center;
 }
 
-/* Product header - flexbox voor uitlijning */
 .product-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Zorgt ervoor dat de bovenkant van h1 en prijs op dezelfde hoogte zitten */
   margin-bottom: 15px;
 }
-
 
 .product-title {
   font-family: 'WWFWebFont', serif;
@@ -629,34 +563,24 @@ body {
   color: var(--color-backbutton);
   margin-bottom: 0;
   text-align: left;
-  /* Uitlijning aan de linkerzijde */
   line-height: 1.2;
-  /* Zorgt ervoor dat de tekst mooi uitgelijnd is */
 }
 
-
-/* Zorg ervoor dat de prijs rechts wordt uitgelijnd */
 .product-price {
   font-size: 16px;
   font-family: 'Rubic', sans-serif;
   color: var(--licht-groen);
-  /* Groen voor de prijs */
   font-weight: 700;
   margin: 0;
   text-align: right;
-  /* Uitlijning aan de rechterzijde */
   line-height: 1.2;
-  /* Zorgt ervoor dat de prijs goed uitgelijnd is met de titel */
 }
 
-/* Verwijder de puntmarker van de li */
 li[aria-label="dropdown"] {
   list-style-type: none;
-  /* Verwijdert de puntmarker */
   padding: 0;
 }
 
-/* Dropdown styling */
 .custom-select {
   position: relative;
   width: 100%;
@@ -670,18 +594,13 @@ li[aria-label="dropdown"] {
   width: 100%;
   padding: 10px 16px;
   border: 1px solid var(--licht-grijs);
-  /* Dunne grijze rand */
   border-radius: 50px;
-  /* Ronde uiteinden */
   background-color: var(--wit);
-  /* Witte achtergrond */
   font-size: 16px;
   color: var(--donker-zwart);
-  /* Tekstkleur */
   cursor: pointer;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  /* Soepel overgangseffect */
 }
 
 .custom-select::after {
@@ -693,39 +612,30 @@ li[aria-label="dropdown"] {
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
-  /* Pijl links */
   border-right: 8px solid transparent;
-  /* Pijl rechts */
   border-top: 6px solid var(--donker-zwart);
-  /* Naar beneden wijzende pijl */
   pointer-events: none;
 }
 
-/* Knop styling */
 .add-to-cart {
   display: inline-block;
   width: 100%;
-  /* Zorgt ervoor dat de knop even breed is als de dropdown */
   padding: 12px 20px;
   background: linear-gradient(135deg, #9bc469, #769c4e);
-  /* Groene gradient */
-  color: white;
+  color: var(--wit);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
   border-radius: 50px;
-  /* Ronde knop */
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .add-to-cart:hover {
   background: linear-gradient(135deg, #769c4e, #9bc469);
-  /* Omgekeerde gradient */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .button-wrapper canvas {
   position: absolute;
@@ -745,38 +655,29 @@ li[aria-label="dropdown"] {
   background-color: var(--bijna-wit);
   padding: 22px;
   max-width: 95%;
-  /* Vergroot de breedte indien nodig */
   margin: 20px auto;
   font-family: Arial, sans-serif;
 }
 
 .cta-content {
   display: flex;
-  /* Zet flexbox in om de inhoud naast elkaar te plaatsen */
   align-items: center;
-  /* Zorgt ervoor dat het logo en de tekst verticaal gecentreerd worden */
   justify-content: flex-start;
-  /* Zorgt ervoor dat de elementen aan de linkerkant blijven */
 }
 
 .cta-content img {
   max-height: 40px;
-  /* Zorgt ervoor dat het logo niet te groot wordt */
   margin-right: 15px;
-  /* Voegt ruimte toe tussen het logo en de tekst */
 }
 
 .cta-content p {
   margin: 0;
-  /* Verwijdert de standaard marge van de paragraaf */
   font-size: 14px;
-  /* Pas de lettergrootte aan naar wens */
   font-family: 'Rubic', sans-serif;
   line-height: 22px;
   padding-left: 22px;
 
 }
-
 
 
 /**********************/
@@ -785,55 +686,43 @@ li[aria-label="dropdown"] {
 
 .product-info2 {
   font-size: 14px;
-  /* Pas de lettergrootte aan naar wens */
   font-family: 'Rubic', sans-serif;
   color: var(--donker-zwart);
-  /* Tekstkleur */
   line-height: 1.6;
-  /* Regelafstand */
   border-radius: 10px;
   padding: 20px;
   max-width: 95%;
-  /* Vergroot de breedte indien nodig */
   margin: 20px auto;
 }
 
 .product-info2 ul {
   list-style: none;
-  /* Verwijdert standaard lijst-styling */
   padding: 0;
   margin: 0;
 }
 
 .product-info2 li {
   display: flex;
-  /* Maakt de inhoud horizontaal uitgelijnd */
   align-items: flex-start;
   margin-bottom: 10px;
-  /* Ruimte tussen de punten */
 }
 
 .product-info2 .checkmark {
   color: var(--licht-groen);
-  /* Groene kleur voor de checkmark */
   font-weight: bold;
   margin-right: 10px;
-  /* Ruimte tussen de checkmark en tekst */
 }
-
 
 
 /****************/
 /* share buttons */
 /****************/
-/* Container voor sociale media */
 .social-share {
   display: flex;
   gap: 15px;
   padding-left: 20px;
 }
 
-/* Algemene styling voor de iconen */
 .social-share .icon {
   width: 25px;
   height: 25px;
@@ -848,49 +737,35 @@ li[aria-label="dropdown"] {
   position: relative;
   overflow: hidden;
   border: none;
-  /* Geen randen rond de iconen */
   outline: none;
-  /* Geen focusrand bij klikken */
 }
 
-
-/* Styling voor afbeeldingen binnen iconen */
 .social-share .icon img {
   width: 90%;
-  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
   height: 90%;
-  /* Houdt dezelfde verhouding als de breedte */
   object-fit: contain;
-  /* Houdt de afbeelding netjes binnen de cirkel */
   border-radius: 50%;
-  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
 }
 
-/* Toast-melding voor "link gekopieerd" */
 .copy-toast {
   position: fixed;
   top: 10px;
   right: 10px;
   background-color: var(--licht-groen);
-  /* Groen zoals op de WWF-site */
   color: var(--wit);
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 14px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   opacity: 0;
-  /* Verborgen standaard */
   transition: opacity 0.5s ease, transform 0.5s ease;
   transform: translateY(-20px);
-  /* Verschijnt van boven naar beneden */
   z-index: 1000;
 }
 
-/* Toon de toast */
 .copy-toast.show {
   opacity: 1;
   transform: translateY(0);
-  /* Beweegt terug naar zijn oorspronkelijke positie */
 }
 
 
@@ -931,18 +806,14 @@ li[aria-label="dropdown"] {
 .voordeel-container a {
   display: inline-block;
   text-decoration: underline;
-  /* Onderstreep de link */
   padding: 10px 20px;
   border-radius: 4px;
   font-size: 1rem;
   color: var(--licht-groen);
-  /* Donkergroene kleur */
 }
 
-/* Zorg ervoor dat de link op verschillende staten de juiste kleur heeft */
 .voordeel-container a:link {
   color: var(--donker-groen);
-  /* Donkergroen voor niet-bezochte links */
 }
 
 .voordeel-container a:visited {
@@ -951,9 +822,7 @@ li[aria-label="dropdown"] {
 
 .voordeel-container a:hover {
   color: var(--licht-groen);
-  /* Lichter groen bij hover */
 }
-
 
 
 /**********************/
@@ -986,17 +855,13 @@ li[aria-label="dropdown"] {
 .HealthySeas a {
   display: inline-block;
   text-decoration: underline;
-  /* Onderstreep de link */
   border-radius: 4px;
   font-size: 1rem;
   color: var(--donker-groen);
-  /* Donkergroene kleur */
 }
 
-/* Zorg ervoor dat de link op verschillende staten de juiste kleur heeft */
 .HealthySeas a:link {
   color: var(--donker-groen);
-  /* Donkergroen voor niet-bezochte links */
 }
 
 .HealthySeas a:visited {
@@ -1005,7 +870,6 @@ li[aria-label="dropdown"] {
 
 .HealthySeas a:hover {
   color: var(--licht-groen);
-  /* Lichter groen bij hover */
 }
 
 
@@ -1055,10 +919,6 @@ li[aria-label="dropdown"] {
   margin-bottom: 20px;
 }
 
-
-
-
-
 /**********************/
 /* footer */
 /**********************/
@@ -1100,19 +960,14 @@ footer p {
   position: relative;
   overflow: hidden;
   outline: none;
-  /* Geen focusrand bij klikken */
 }
 
 
 .social-footer .icon img {
   width: 90%;
-  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
   height: 90%;
-  /* Houdt dezelfde verhouding als de breedte */
   object-fit: contain;
-  /* Houdt de afbeelding netjes binnen de cirkel */
   border-radius: 50%;
-  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
 }
 
 
@@ -1136,7 +991,6 @@ footer p {
   color: var(--zwart);
   margin-bottom: 20px;
 }
-
 
 
 /* betalen */
@@ -1185,19 +1039,14 @@ footer p {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* Zorgt dat afbeeldingen en tekst apart worden behandeld */
   align-items: stretch;
 }
 
 .sponsoren-images {
   display: flex;
-  /* Zet de afbeeldingen naast elkaar */
   justify-content: space-between;
-  /* Verdeel de ruimte gelijkmatig */
   align-items: center;
-  /* Zorg dat ze gecentreerd zijn op dezelfde hoogte */
   margin-bottom: 20px;
-  /* Ruimte tussen afbeeldingen en tekst */
 }
 
 .sponsoren-images img {
@@ -1224,7 +1073,6 @@ footer p {
 
 
 
-/* footerLogo */
 .footerLogo {
   display: flex;
   align-items: flex-start;
@@ -1239,31 +1087,18 @@ footer p {
 
 .footerLogo img {
   width: 50px;
-  /* Breedte van de afbeelding */
   height: 80.2px;
-  /* Hoogte van de afbeelding */
   margin-right: 15px;
-  /* Ruimte tussen afbeelding en tekst */
 }
 
 .footerLogo h2 {
   margin: 0;
-  /* Verwijder extra marges */
   margin-left: auto;
-  /* Duwt de `h1` naar de rechterkant */
   text-align: right;
-  /* Zorgt dat de tekst rechts uitgelijnd is */
   font-size: 20px;
   color: var(--zwart);
   line-height: 1;
-  /* Zorgt voor nette uitlijning */
 }
-
-
-
-
-
-
 
 
 
@@ -1277,21 +1112,10 @@ footer p {
 /* header */
 /**********************/
 
-
-/*.main2 {
-  background-image: url(../images2/inno-header.png);
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: 230%; 
-  height: 450px; 
-}*/
-
-
 .Head-p2 {
   text-align: left;
   padding: 20px;
   max-width: 100%;
-  /*margin-top: 10em;*/
 }
 
 .Head-p2 h1 {
@@ -1313,17 +1137,14 @@ footer p {
 /****************/
 /* share buttons */
 /****************/
-/* Container voor sociale media */
 .social-share2 {
   display: flex;
   gap: 15px;
   position: absolute;
   padding-right: 20px;
   right: 0;
-  /* Zorgt dat ze aan de rechterkant van de pagina staan */
 }
 
-/* Algemene styling voor de iconen */
 .social-share2 .icon {
   width: 25px;
   height: 25px;
@@ -1338,22 +1159,15 @@ footer p {
   position: relative;
   overflow: hidden;
   border: none;
-  /* Geen randen rond de iconen */
   outline: none;
-  /* Geen focusrand bij klikken */
 }
 
 
-/* Styling voor afbeeldingen binnen iconen */
 .social-share2 .icon img {
   width: 90%;
-  /* Zorgt dat de afbeelding bijna de volledige cirkel vult */
   height: 90%;
-  /* Houdt dezelfde verhouding als de breedte */
   object-fit: contain;
-  /* Houdt de afbeelding netjes binnen de cirkel */
   border-radius: 50%;
-  /* Zorgt dat afbeeldingen afgerond blijven indien nodig */
 }
 
 
@@ -1392,8 +1206,6 @@ footer p {
   text-align: center;
 }
 
-/* Algemene styling voor links */
-
 .WatDoenZe {
   max-width: 95%;
   margin: 20px auto;
@@ -1403,18 +1215,13 @@ footer p {
   text-align: center;
 }
 
-/* Algemene styling voor links */
 .WatDoenZe a {
   display: block;
   width: 100%;
   max-width: 600px;
-  /* Breedte gelijk aan .product-info2 */
   height: auto;
-  /* Hoogte wordt automatisch ingesteld */
   aspect-ratio: 690 / 310;
-  /* Verhouding van de originele afbeeldingen */
   margin: 0;
-  /* Geen marge tussen de blokken */
   position: relative;
   text-decoration: none;
   background-size: cover;
@@ -1425,46 +1232,35 @@ footer p {
   align-items: flex-end;
   padding-left: 10px;
   padding-bottom: 40px;
-  /* Ruimte voor de tekst aan de onderkant */
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Positioneer de tekst in de rechterbenedenhoek */
 .WatDoenZe .footer-text {
   position: absolute;
   bottom: 10px;
   right: 10px;
   font-size: 8px;
-  /* Kleinere tekstgrootte */
   color: var(--bijna-wit);
 }
 
-/* Zorg dat er geen ruimte tussen de blokken ontstaat */
 .WatDoenZe div {
   display: flex;
   flex-direction: column;
-  /* Stapelexemplaar van boven naar beneden */
   gap: 0;
-  /* Geen ruimte tussen de elementen */
 }
 
-/* Specifieke styling voor de thema's */
 .themas {
   background-image: url("../images2/rufiji-delta.png");
 }
 
-/* Specifieke styling voor de gebieden */
 .gebieden {
   background-image: url("../images2/giraffe.png");
 }
 
-/* Specifieke styling voor hoe we werken */
 .werkwijze {
   background-image: url("../images2/duiker-net.png");
 }
-
-
 
 
 /*****************************/
@@ -1495,14 +1291,6 @@ footer p {
 
 }
 
-/*.expert p {
-  font-size: 1rem;
-  font-family: 'Rubic', sans-serif;
-  color: #555;
-  margin-bottom: 20px;
-}
-*/
-
 .quote-name {
   font-size: 15px;
   line-height: 18px;
@@ -1519,7 +1307,6 @@ footer p {
   margin-bottom: 29px;
 }
 
-/* Knop styling */
 .blogs {
   display: inline-block;
   border: 1px solid var(--zacht-wit);
@@ -1542,8 +1329,6 @@ footer p {
 
 }
 
-
-
 /******************/
 /* meer over wwf */
 /*****************/
@@ -1552,7 +1337,6 @@ footer p {
   color: var(--zwart);
 }
 
-/* Algemene styling voor links */
 .MeerInfo a {
   display: block;
   width: 100%;
@@ -1568,12 +1352,10 @@ footer p {
   justify-content: flex-end;
   padding-left: 10px;
   padding-bottom: 40px;
-  /* Ruimte voor de tekst aan de onderkant */
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Styling voor de hoofdtekst van de links */
 .MeerInfo a .link-text {
   font-size: 30px;
   line-height: 36px;
@@ -1582,7 +1364,6 @@ footer p {
   color: var(--wit);
 }
 
-/* Positioneer de footer-tekst */
 .MeerInfo .footer-text {
   position: absolute;
   bottom: 10px;
@@ -1595,14 +1376,12 @@ footer p {
   padding: 5px;
 }
 
-/* Zorg dat er geen ruimte tussen de blokken ontstaat */
 .MeerInfo div {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-/* Specifieke styling voor de thema's */
 .Over {
   background-image: url("../images2/walvis.png");
 }
@@ -1616,9 +1395,6 @@ footer p {
 }
 
 
-
-
-
 /******************/
 /* resultaten en updates */
 /*****************/
@@ -1626,14 +1402,11 @@ footer p {
   text-align: center;
 }
 
-/* Algemene styling voor links */
 .ResultatenEnUpdates {
   max-width: 95%;
   margin: 20px auto;
 }
 
-
-/* bonenatlas */
 .Bonenatlas {
   text-align: flex-start;
   padding: 20px;
@@ -1672,16 +1445,12 @@ footer p {
 .ContentContainer {
   display: flex;
   align-items: flex-start;
-  /* Zorgt ervoor dat ze bovenaan uitgelijnd zijn */
   justify-content: flex-start;
   gap: 0;
-  /* Geen ruimte tussen de afbeelding en de div */
   margin-bottom: 20px;
-  /* Ruimte tussen de blokken */
   width: 100%;
 }
 
-/* Styling voor de afbeelding */
 .ContentContainer img {
   width: 50%;
   object-fit: cover;
@@ -1689,7 +1458,6 @@ footer p {
   position: relative;
 }
 
-/* Styling voor de .nederlandsVoedselsysteem div */
 .nederlandsVoedselsysteem {
   background-color: var(--bijna-wit);
   overflow: hidden;
